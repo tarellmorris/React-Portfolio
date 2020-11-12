@@ -1,10 +1,11 @@
 import React from 'react';
-import {FaLinkedin} from 'react-icons/fa';
+import {FaLinkedin, FaGithub} from 'react-icons/fa';
 import {
     FooterContainer,
     FootNavWrapper,
     FootLink,
     FootSocialLink,
+    SocialWrapper,
     CopyInfo
 } from './footerElements';
 
@@ -46,16 +47,28 @@ const Footer = () => {
                     </FootLink>
                 )}
             </FootNavWrapper>
-            <FootSocialLink>
-                <a 
-                href="https://www.linkedin.com/in/tarellmorris/"
-                target="_blank" 
-                rel="noopener noreferrer"
-                >
-                    <FaLinkedin />
-                     LinkedIn
-                </a> 
-            </FootSocialLink>
+            <SocialWrapper>
+                <FootSocialLink>
+                    <a 
+                    href="https://www.linkedin.com/in/tarellmorris/"
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    >
+                        <FaLinkedin />
+                        LinkedIn
+                    </a> 
+                </FootSocialLink>
+                <FootSocialLink>
+                    <a 
+                    href="https://github.com/tarellmorris"
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    >
+                        <FaGithub />
+                        GitHub
+                    </a> 
+                </FootSocialLink>
+            </SocialWrapper>
             <CopyInfo>
                 © 2020 | Tarell Morris. All Rights Reserved.
             </CopyInfo>

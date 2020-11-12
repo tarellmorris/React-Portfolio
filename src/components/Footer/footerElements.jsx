@@ -17,6 +17,11 @@ export const FootNavWrapper = styled.ul`
     padding: 0px;
     list-style: none;
 `
+export const SocialWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
 export const FootLink = styled(LinkR)`
     margin: 15px;
     cursor: pointer;

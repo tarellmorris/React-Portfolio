@@ -43,7 +43,7 @@ const logos4 = [
 const Homepage = () => {
 
     useEffect( () => {
-        const checkpoint = 300
+        const checkpoint = 150
         let opacity = .9
     
         window.addEventListener("scroll", () => {

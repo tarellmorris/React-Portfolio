@@ -38,7 +38,7 @@ export const TextContainer = styled.div`
         left: 0;
         right: 0;
         color: white;
-        font-size: 7rem;
+        font-size: 6.5rem;
         opacity: .9;
     }
 
