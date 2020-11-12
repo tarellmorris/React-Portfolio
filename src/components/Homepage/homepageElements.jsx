@@ -15,13 +15,38 @@ export const HeroImg = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    overfill: hidden;
 
     @media screen and (min-width: 960.5px) {
         background-attachment: fixed;
     }
 `
 export const TextContainer = styled.div`
-    text-align: center
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+
+    & #downArrow {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        top: 75%;
+        left: 0;
+        right: 0;
+        color: white;
+        font-size: 7rem;
+        opacity: .9;
+    }
+
+    @media screen and (min-height: 820px) {
+        & #downArrow {
+            top: 85%;
+        }
+    }
 `
 export const WelcomeMessage = styled.h1`
     color: white;

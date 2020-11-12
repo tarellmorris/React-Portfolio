@@ -20,7 +20,7 @@ class Navbar extends Component {
 
     componentDidMount() {
         window.addEventListener('scroll', () => {
-            const isTop = window.scrollY < 50
+            const isTop = window.scrollY < 10
 
             if (!isTop) {
                 this.setState({ isScrolled: true })
@@ -30,9 +30,9 @@ class Navbar extends Component {
         })
     };
 
-    // componentWillUnmount() {
-    //     window.removeEventListener('scroll');
-    // };
+    componentWillUnmount() {
+        window.removeEventListener('scroll');
+    };
 
     render() {
         const boxShadow = "0px 2px 9px 1px #000000a6"
