@@ -34,7 +34,7 @@ export const TextContainer = styled.div`
         position: absolute;
         margin-left: auto;
         margin-right: auto;
-        top: 75%;
+        top: 70%;
         left: 0;
         right: 0;
         color: white;
@@ -42,7 +42,7 @@ export const TextContainer = styled.div`
         opacity: .9;
     }
 
-    @media screen and (min-height: 820px) {
+    @media screen and (min-height: 850px) {
         & #downArrow {
             top: 85%;
         }
