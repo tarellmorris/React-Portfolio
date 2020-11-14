@@ -26,7 +26,7 @@ export const FootLink = styled(LinkR)`
     margin: 15px;
     cursor: pointer;
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300; 
 
     &:hover {

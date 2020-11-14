@@ -21,7 +21,7 @@ export const TextLabel = styled.label`
 export const TextInput = styled.input`
     padding: 10px 15px;
     border: #2e2e3b 2px solid;
-    min-width: 300px;
+    min-width: 350px;
     margin: 5px 25px;
     outline: none;
 `
@@ -31,7 +31,7 @@ export const MessageLabel = styled.label`
 export const TextArea = styled.textarea`
     padding: 10px 15px;
     border: #2e2e3b 2px solid;
-    min-width: 300px;
+    min-width: 350px;
     margin: 5px 25px;
     outline: none;
 `

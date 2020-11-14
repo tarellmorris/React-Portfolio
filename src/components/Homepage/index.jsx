@@ -43,20 +43,27 @@ const logos4 = [
 const Homepage = () => {
 
     useEffect( () => {
-        const checkpoint = 150
-        let opacity = .9
-    
-        window.addEventListener("scroll", () => {
+        const checkpoint = 200
+        let opacity = .8
+
+        const handleScroll = () => {
             let currentScroll = window.pageYOffset;
             if (currentScroll <= checkpoint) {
-                opacity = .9 - currentScroll / checkpoint;
+                opacity = .8 - currentScroll / checkpoint;
             } else {
                 opacity = 0
             }
         
             document.querySelector("#downArrow").style.opacity = opacity;
-        })
-    })
+        }
+    
+        window.addEventListener("scroll", handleScroll)
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll)
+        }
+
+    }, [])
 
     return (
         <>

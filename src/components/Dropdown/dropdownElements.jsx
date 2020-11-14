@@ -21,17 +21,22 @@ export const DropdownMenu = styled.div`
         cursor: pointer;
         position: absolute;
         top: 26px;
-        right: 35px;
-    }
-
-    & .brand {
-        position: absolute;
-        top: 20px;
-        left: 25px;
+        right: 32px;
     }
 
     & a {
         color: #2e2e3b;
+        font-size: 1.3rem;
         user-select: none;
+    }
+
+    & .brand {
+
+        a {
+            position: absolute;
+            top: 20px;
+            left: 25px;
+            font-size: 1.6rem;
+        }
     }
 `

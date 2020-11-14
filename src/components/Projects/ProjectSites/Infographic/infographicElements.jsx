@@ -43,8 +43,8 @@ export const ProContainer = styled.div`
 
     & h2 {
         color: #404897;
-        font-size: 1.5rem;
-        margin-bottom: 25px;
+        font-size: 1.2rem;
+        margin: 25px 0;
         text-align: left;
     }
 `
