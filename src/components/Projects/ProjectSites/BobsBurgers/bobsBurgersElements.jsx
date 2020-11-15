@@ -97,11 +97,15 @@ export const ProfilesWrap = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 175px;
+        width: 125px;
         margin: 0 5px;
 
         & p {
             display: none;
+        }
+
+        @media screen and (min-width: 1100px) {
+            width: 175px;
         }
     }
 
@@ -113,7 +117,7 @@ export const ProfilesWrap = styled.div`
         background: #000000ee;
         flex-direction: row;  
         padding: 25px;
-        top: -200%;
+        top: -215%;
         left: -200%;
         z-index: 6;
 
