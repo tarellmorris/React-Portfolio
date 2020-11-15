@@ -42,7 +42,7 @@ export const TextContainer = styled.div`
         opacity: .8;
     }
 
-    @media screen and (min-height: 850px) {
+    @media screen and (min-height: 925px) {
         & #downArrow {
             top: 85%;
         }
@@ -51,7 +51,7 @@ export const TextContainer = styled.div`
 export const WelcomeMessage = styled.h1`
     color: white;
     font-size: 55px;
-    margin-bottom: 25px;
+    margin-bottom: 100px;
     padding: 10px;
     text-shadow: 1px 1px 1px #2e2e3b;
     user-select: none;
