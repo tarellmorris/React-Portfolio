@@ -6,6 +6,7 @@ export const HomepageContainer = styled.div`
 `
 export const HeroImg = styled.div`
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     height: 96vh;
@@ -30,23 +31,37 @@ export const TextContainer = styled.div`
     text-align: center;
     height: 100%;
 
+
     & #downArrow {
         position: absolute;
         margin-left: auto;
         margin-right: auto;
-        top: 70%;
+        top: 65%;
         left: 0;
         right: 0;
         color: white;
         font-size: 6.5rem;
-        opacity: .8;
-    }
+        opacity: .9;
+        z-index: 2;
 
-    @media screen and (min-height: 925px) {
-        & #downArrow {
-            top: 85%;
+        @media screen and (min-height: 925px) {
+            top: 75%;
         }
     }
+`
+export const GoldBanner = styled.div`
+    content: '';
+    position: absolute;
+    top: 63%;
+    height: 150px;
+    width: 100vw;
+    background: #e6b82f;
+    opacity: .4;
+
+    @media screen and (min-height: 925px) {
+        top: 73%;
+    }
+
 `
 export const WelcomeMessage = styled.h1`
     color: white;

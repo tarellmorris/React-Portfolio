@@ -8,7 +8,8 @@ import {
     HomepageContainer,
     HeroImg,
     TextContainer,
-    WelcomeMessage
+    WelcomeMessage,
+    GoldBanner
 } from './homepageElements';
 
 import AngularLogo from '../../assets/logos/Angular.png';
@@ -44,17 +45,25 @@ const Homepage = () => {
 
     useEffect( () => {
         const checkpoint = 200
-        let opacity = .8
+        const downArrowStyle = document.querySelector("#downArrow").style
+        const bannerStyle = document.querySelector("#banner").style
+        let opacity = .9
+        let left = '0px'
 
         const handleScroll = () => {
-            let currentScroll = window.pageYOffset;
+            let currentScroll = window.pageYOffset
+            let width = window.screen.width
+
             if (currentScroll <= checkpoint) {
-                opacity = .8 - currentScroll / checkpoint;
+                opacity = .9 - currentScroll / checkpoint
+                left = `${currentScroll * (width / 150)}px`
             } else {
                 opacity = 0
+                left = `${width}px`
             }
         
-            document.querySelector("#downArrow").style.opacity = opacity;
+            downArrowStyle.opacity = opacity
+            bannerStyle.left = left
         }
     
         window.addEventListener("scroll", handleScroll)
@@ -76,6 +85,7 @@ const Homepage = () => {
                         </WelcomeMessage>
                         <HiArrowCircleDown id="downArrow" />
                     </TextContainer>
+                    <GoldBanner id="banner"/>
                 </HeroImg>
                 <AboutContainer/>
                 <FixedImgBanner bgImg={bgImg2} height="250px">
