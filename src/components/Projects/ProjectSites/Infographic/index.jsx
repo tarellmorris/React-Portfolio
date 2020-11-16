@@ -14,15 +14,15 @@ import {
     LogoBanner,
     GradientBorder
 } from './infographicElements'
-import bgImg from '../../../../assets/backgrounds/web-dev-bg2.png'
-import lubbertImg from '../../../../assets/projects/infographic/pro-pictures/dr-bart.png'
-import pykeImg from '../../../../assets/projects/infographic/pro-pictures/amy-pyke.png'
-import lenningImg from '../../../../assets/projects/infographic/pro-pictures/natali-lenning.png'
-import natasaImg from '../../../../assets/projects/infographic/pro-pictures/natasa-dugandzic.png'
-import blockLubbert from '../../../../assets/projects/infographic/blocks/dr-bart-block.png'
-import blockPyke from '../../../../assets/projects/infographic/blocks/amy-pike-block.png'
-import blockLenning from '../../../../assets/projects/infographic/blocks/natalie-lenning-block.png'
-import blockDugan from '../../../../assets/projects/infographic/blocks/natasa-dugandzic-block.png'
+import bgImg from '../../../../assets/backgrounds/web-dev-bg2.webp'
+import lubbertImg from '../../../../assets/projects/infographic/pro-pictures/dr-bart.webp'
+import pykeImg from '../../../../assets/projects/infographic/pro-pictures/amy-pyke.webp'
+import lenningImg from '../../../../assets/projects/infographic/pro-pictures/natali-lenning.webp'
+import natasaImg from '../../../../assets/projects/infographic/pro-pictures/natasa-dugandzic.webp'
+import blockLubbert from '../../../../assets/projects/infographic/blocks/dr-bart-block.webp'
+import blockPyke from '../../../../assets/projects/infographic/blocks/amy-pike-block.webp'
+import blockLenning from '../../../../assets/projects/infographic/blocks/natalie-lenning-block.webp'
+import blockDugan from '../../../../assets/projects/infographic/blocks/natasa-dugandzic-block.webp'
 
 const Infographic = () => {
     const profiles = [

@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import FixedImgBanner from '../../../Common/FixedImgBanner';
-import bgImg from '../../../../assets/backgrounds/web-dev-bg2.png';
+import bgImg from '../../../../assets/backgrounds/web-dev-bg2.webp';
 import {FaRegHandRock, FaRegHandPaper, FaRegHandScissors} from 'react-icons/fa';
 
 import {

@@ -1,30 +1,30 @@
-import React, {useEffect} from 'react';
-import FixedImgBanner from '../../components/Common/FixedImgBanner/';
-import LogoWrapper from '../../components/Common/LogoWrapper/';
-import ProjectsContainer from '../../components/Projects/';
-import AboutContainer from '../../components/About/';
-import ContactContainer from '../../components/Contact/';
+import React, {useEffect} from 'react'
+import FixedImgBanner from '../../components/Common/FixedImgBanner/'
+import LogoWrapper from '../../components/Common/LogoWrapper/'
+import ProjectsContainer from '../../components/Projects/'
+import AboutContainer from '../../components/About/'
+import ContactContainer from '../../components/Contact/'
 import {
     HomepageContainer,
     HeroImg,
     TextContainer,
     WelcomeMessage,
     GoldBanner
-} from './homepageElements';
+} from './homepageElements'
 
-import AngularLogo from '../../assets/logos/Angular.png';
-import BootstrapLogo from '../../assets/logos/bootstrap.png';
-import ChromeLogo from '../../assets/logos/chrome.png';
-import FirefoxLogo from '../../assets/logos/firefox.png';
-import PythonLogo from '../../assets/logos/python.png';
-import ReactLogo from '../../assets/logos/react-trans.png';
-import VSLogo from '../../assets/logos/vscode.png';
+import AngularLogo from '../../assets/logos/Angular.webp'
+import BootstrapLogo from '../../assets/logos/bootstrap.webp'
+import ChromeLogo from '../../assets/logos/chrome.webp'
+import FirefoxLogo from '../../assets/logos/firefox.webp'
+import PythonLogo from '../../assets/logos/python.webp'
+import ReactLogo from '../../assets/logos/react-trans.webp'
+import VSLogo from '../../assets/logos/vscode.webp'
 
 import {HiArrowCircleDown} from 'react-icons/hi'
 
-import bgImg1 from '../../assets/backgrounds/web-dev-bg1.png';
-import bgImg2 from '../../assets/backgrounds/web-dev-bg2.png';
-import bgImg3 from '../../assets/backgrounds/web-dev-bg3.png';
+import heroImg from '../../assets/backgrounds/hero-img.webp'
+import bgImg2 from '../../assets/backgrounds/web-dev-bg2.webp'
+import bgImg3 from '../../assets/backgrounds/web-dev-bg3.webp'
 
 const logos2 = [
     ChromeLogo,
@@ -77,7 +77,7 @@ const Homepage = () => {
     return (
         <>
             <HomepageContainer id="Home">
-                <HeroImg  bgImg={bgImg1}>
+                <HeroImg  bgImg={heroImg}>
                     <TextContainer>
                         <WelcomeMessage>
                             Hello, <br />

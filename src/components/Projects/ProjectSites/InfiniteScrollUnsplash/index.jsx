@@ -13,7 +13,7 @@ import {
 } from './infiniteScrollElements'
 import InfiniteScroll from 'react-infinite-scroll-component'
 
-import bgImg from '../../../../assets/backgrounds/web-dev-bg2.png'
+import bgImg from '../../../../assets/backgrounds/web-dev-bg2.webp'
 
 export const InfiniteScrollUnsplash = () => {
     const [images, setImages] = useState([])

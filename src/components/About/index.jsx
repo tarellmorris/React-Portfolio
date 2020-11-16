@@ -10,14 +10,14 @@ import {
     GridWrap
 } from './aboutElements'
 
-import bgImg2 from '../../assets/backgrounds/web-dev-bg2.png'
-import aboutImg1 from '../../assets/tarell/tarell.JPG'
-import aboutImg2 from '../../assets/stock/books.jpg'
-import aboutImg3 from '../../assets/logos/react-logo.png'
-import HTMLLogo from '../../assets/logos/html5-js-css3.png'
-import SASSLogo from '../../assets/logos/sass.png'
-import VueLogo from '../../assets/logos/vue.png'
-import LaraLogo from '../../assets/logos/laravel.png'
+import bgImg2 from '../../assets/backgrounds/web-dev-bg2.webp'
+import aboutImg1 from '../../assets/tarell/tarell.webp'
+import aboutImg2 from '../../assets/stock/books.webp'
+import aboutImg3 from '../../assets/logos/react-logo.webp'
+import HTMLLogo from '../../assets/logos/html5-js-css3.webp'
+import SASSLogo from '../../assets/logos/sass.webp'
+import VueLogo from '../../assets/logos/vue.webp'
+import LaraLogo from '../../assets/logos/laravel.webp'
 
 const AboutContainer = () => {
     const logos = [

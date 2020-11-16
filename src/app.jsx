@@ -19,7 +19,7 @@ import FixedImgBanner from './components/Common/FixedImgBanner'
 import AboutContainer from './components/About'
 import ContactContainer from './components/Contact'
 
-import bgImg from './assets/backgrounds/web-dev-bg3.png';
+import bgImg from './assets/backgrounds/web-dev-bg3.webp';
 import { WeatherApp } from './components/Projects/ProjectSites/WeatherApp';
 import { InfiniteScrollUnsplash } from './components/Projects/ProjectSites/InfiniteScrollUnsplash';
 

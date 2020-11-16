@@ -9,7 +9,7 @@ import {
     TempDisplay,
     WeatherDisplay
 } from './weatherAppElements'
-import bgImg from '../../../../assets/backgrounds/web-dev-bg2.png'
+import bgImg from '../../../../assets/backgrounds/web-dev-bg2.webp'
 
 const api = {
     key: 'd176e5022318ec17acde3ea69ddad0af',

@@ -4,12 +4,12 @@ import ProjectCard from './ProjectCard'
 import {ProjectsWrapper} from './projectsContainerElements'
 import {Link as LinkR} from 'react-router-dom'
 
-import bobImg from '../../assets/thumbnails/bobs-port.jpg'
-import infoImg from "../../assets/thumbnails/panel-stock.jpg"
-import rpsImg from "../../assets/thumbnails/rps-port.jpg"
-import questImg from "../../assets/thumbnails/question.jpg"
-import weatherImg from "../../assets/thumbnails/weather-stock.jpg"
-import unsplashImg from "../../assets/thumbnails/unsplash.jpg"
+import bobImg from '../../assets/thumbnails/bobs-port.webp'
+import infoImg from "../../assets/thumbnails/panel-stock.webp"
+import rpsImg from "../../assets/thumbnails/rps-port.webp"
+import questImg from "../../assets/thumbnails/question.webp"
+import weatherImg from "../../assets/thumbnails/weather-stock.webp"
+import unsplashImg from "../../assets/thumbnails/unsplash.webp"
 
 
 const ProjectsContainer = () => {

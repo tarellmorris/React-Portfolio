@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import bgImg from "../../assets/backgrounds/web-dev-bg1.png";
 
 export const HomepageContainer = styled.div`
 
@@ -12,7 +11,7 @@ export const HeroImg = styled.div`
     height: 96vh;
     width: 100%;
     background: #2e2e3b;
-    background-image: url(${bgImg});
+    background-image: url(${props => props.bgImg});
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
