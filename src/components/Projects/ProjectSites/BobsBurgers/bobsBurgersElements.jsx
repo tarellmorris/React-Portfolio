@@ -105,7 +105,8 @@ export const ProfilesWrap = styled.div`
         }
 
         @media screen and (min-width: 1100px) {
-            width: 175px;
+            width: 160px;
+            margin: 0 10px;
         }
     }
 
