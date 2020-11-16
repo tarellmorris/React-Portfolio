@@ -43,7 +43,7 @@ export const SubmitButton = styled.button`
     color: white;
     border-style: none;
     outline: none;
-    box-shadow: 0px 1px 8px 0px #bebebe;
+    box-shadow: 0px 4px 8px 1px #000000a6;
 
     &:hover {
         color: #e6b82f;

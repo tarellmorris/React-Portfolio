@@ -11,7 +11,7 @@ export const ImgDiv = styled.div`
     background-repeat: no-repeat;
     background-image: url(${props => props.imgUrl});
     opacity: ${props => props.opac};
-    box-shadow: 0px 4px 18px 0px #000000a6;
+    box-shadow: 0px 4px 8px 1px #000000a6;
     overflow: hidden
 `
 export const TextWrapper = styled.div`

@@ -15,7 +15,7 @@ export const HeroImg = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    overfill: hidden;
+    overflow: hidden;
 
     @media screen and (min-width: 960.5px) {
         background-attachment: fixed;
@@ -43,6 +43,7 @@ export const TextContainer = styled.div`
         opacity: .9;
         z-index: 2;
 
+
         @media screen and (min-height: 925px) {
             top: 75%;
         }
@@ -56,6 +57,8 @@ export const GoldBanner = styled.div`
     width: 100vw;
     background: #e6b82f;
     opacity: .4;
+    box-shadow: 0px 4px 8px 1px #000000a6;
+
 
     @media screen and (min-height: 925px) {
         top: 73%;

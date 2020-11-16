@@ -35,7 +35,7 @@ class Navbar extends Component {
     };
 
     render() {
-        const boxShadow = "0px 2px 9px 1px #000000a6"
+        const boxShadow = "0px 4px 8px 1px #000000a6"
         const textShadowLightFont = "1px 1px 1px #2e2e3b"
         const textShadowDarkFont = "1px 1px 1px #ffffff"
         const darkFont = "#2e2e3b"

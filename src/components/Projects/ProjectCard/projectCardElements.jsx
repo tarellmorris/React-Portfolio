@@ -25,8 +25,6 @@ export const CardTitle = styled.h2`
     font-size: 25px;
     color: white;
     user-select: none;
-    // text-shadow: 1px 1px 1px #2e2e3b;
-    // transition: ${transition};
 `
 export const Frontside = styled.div`
     position: absolute;
@@ -59,7 +57,7 @@ export const CardContainer = styled.div`
     width: 350px;
     height: 450px;
     background: #222222;
-    box-shadow: 0px 4px 18px 0px #000000a6;
+    box-shadow: 0px 4px 8px 1px #000000a6;
     overflow: hidden;
 
     &:hover {

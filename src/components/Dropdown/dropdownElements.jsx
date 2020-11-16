@@ -13,7 +13,7 @@ export const DropdownMenu = styled.div`
     background: white;
     z-index: 20;
     transition: .5s ease;
-    box-shadow: 0px 2px 9px 1px #000000a6;
+    box-shadow: 0px 4px 8px 1px #000000a6;
 
     & .cross {
         font-size: 26px;
