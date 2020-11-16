@@ -1,6 +1,5 @@
 import React from 'react'
 import FixedImgBanner from '../Common/FixedImgBanner'
-import LogoWrapper from '../Common/LogoWrapper'
 import SectionBanner from '../Common/SectionBanner'
 import {
     AboutWrapper,
@@ -10,25 +9,15 @@ import {
     GridWrap
 } from './aboutElements'
 
+import {FaChrome, FaFirefoxBrowser} from 'react-icons/fa'
+import {SiHtml5, SiCss3, SiJavascript} from 'react-icons/si'
+
 import bgImg2 from '../../assets/backgrounds/web-dev-bg2.webp'
 import aboutImg1 from '../../assets/tarell/tarell.webp'
 import aboutImg2 from '../../assets/stock/books.webp'
 import aboutImg3 from '../../assets/logos/react-logo.webp'
-import HTMLLogo from '../../assets/logos/html5-js-css3.webp'
-import SASSLogo from '../../assets/logos/sass.webp'
-import VueLogo from '../../assets/logos/vue.webp'
-import LaraLogo from '../../assets/logos/laravel.webp'
 
 const AboutContainer = () => {
-    const logos = [
-        HTMLLogo,
-        SASSLogo
-    ]
-    const logos2 = [
-        VueLogo,
-        LaraLogo
-
-    ]
     const titles = [
         "Let me tell you a bit about myself",
         "There's always more to learn",
@@ -108,7 +97,9 @@ const AboutContainer = () => {
             </SectionBanner>
 
             <FixedImgBanner bgImg={bgImg2} height="250px">
-                <LogoWrapper logos={logos2} />
+                <SiHtml5></SiHtml5>
+                <SiCss3></SiCss3>
+                <SiJavascript></SiJavascript>
             </FixedImgBanner>
 
             <SectionBanner sectionTitle={titles[1]}>
@@ -129,7 +120,8 @@ const AboutContainer = () => {
             </SectionBanner>
 
             <FixedImgBanner bgImg={bgImg2} height="250px">
-                <LogoWrapper logos={logos} />
+                <FaChrome></FaChrome>
+                <FaFirefoxBrowser></FaFirefoxBrowser>
             </FixedImgBanner>
 
             <SectionBanner sectionTitle={titles[2]}>

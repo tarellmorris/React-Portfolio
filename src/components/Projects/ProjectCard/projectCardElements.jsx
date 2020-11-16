@@ -64,7 +64,7 @@ export const CardContainer = styled.div`
         cursor: pointer;
 
         & ${CardTitle} {
-            color: #e6b82f;
+            color: #3ee1a5;
         }
 
         & ${CardImgWrapper} {

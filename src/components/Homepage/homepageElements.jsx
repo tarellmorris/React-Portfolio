@@ -30,7 +30,6 @@ export const TextContainer = styled.div`
     text-align: center;
     height: 100%;
 
-
     & #downArrow {
         position: absolute;
         margin-left: auto;
@@ -43,22 +42,20 @@ export const TextContainer = styled.div`
         opacity: .9;
         z-index: 2;
 
-
         @media screen and (min-height: 925px) {
             top: 75%;
         }
     }
 `
-export const GoldBanner = styled.div`
+export const Banner = styled.div`
     content: '';
     position: absolute;
     top: 63%;
     height: 150px;
     width: 100vw;
-    background: #e6b82f;
-    opacity: .4;
+    background: #3ee1a5;
+    opacity: .6;
     box-shadow: 0px 4px 8px 1px #000000a6;
-
 
     @media screen and (min-height: 925px) {
         top: 73%;
@@ -70,6 +67,6 @@ export const WelcomeMessage = styled.h1`
     font-size: 55px;
     margin-bottom: 100px;
     padding: 10px;
-    text-shadow: 1px 1px 1px #2e2e3b;
+    // text-shadow: 1px 1px 1px #2e2e3b;
     user-select: none;
 `

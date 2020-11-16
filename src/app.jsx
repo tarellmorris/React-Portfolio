@@ -8,20 +8,21 @@ import './styles/app.sass';
 
 import Navbar from './components/Navbar';
 import Homepage from './components/Homepage';
-import Infographic from './components/Projects/ProjectSites/Infographic'
 import FooterContainer from  './components/Footer';
 import Dropdown from './components/Dropdown';
-import BobsBurgers from './components/Projects/ProjectSites/BobsBurgers';
 import ScrollToTop from './components/Common/ScrollToTop';
-import RockPaperScissors from './components/Projects/ProjectSites/RockPaperScissors';
 import ProjectsContainer from './components/Projects';
 import FixedImgBanner from './components/Common/FixedImgBanner'
 import AboutContainer from './components/About'
 import ContactContainer from './components/Contact'
 
 import bgImg from './assets/backgrounds/web-dev-bg3.webp';
-import { WeatherApp } from './components/Projects/ProjectSites/WeatherApp';
-import { InfiniteScrollUnsplash } from './components/Projects/ProjectSites/InfiniteScrollUnsplash';
+
+import RockPaperScissors from './components/Projects/ProjectSites/RockPaperScissors';
+import Infographic from './components/Projects/ProjectSites/Infographic'
+import BobsBurgers from './components/Projects/ProjectSites/BobsBurgers';
+import {WeatherApp} from './components/Projects/ProjectSites/WeatherApp';
+import {InfiniteScrollUnsplash} from './components/Projects/ProjectSites/InfiniteScrollUnsplash';
 
 
 class App extends Component {

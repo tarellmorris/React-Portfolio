@@ -1,6 +1,5 @@
-import React, {useEffect} from 'react'
+import React, {useEffect} from 'react';
 import FixedImgBanner from '../../components/Common/FixedImgBanner/'
-import LogoWrapper from '../../components/Common/LogoWrapper/'
 import ProjectsContainer from '../../components/Projects/'
 import AboutContainer from '../../components/About/'
 import ContactContainer from '../../components/Contact/'
@@ -9,37 +8,25 @@ import {
     HeroImg,
     TextContainer,
     WelcomeMessage,
-    GoldBanner
+    Banner
 } from './homepageElements'
 
-import AngularLogo from '../../assets/logos/Angular.webp'
-import BootstrapLogo from '../../assets/logos/bootstrap.webp'
-import ChromeLogo from '../../assets/logos/chrome.webp'
-import FirefoxLogo from '../../assets/logos/firefox.webp'
-import PythonLogo from '../../assets/logos/python.webp'
-import ReactLogo from '../../assets/logos/react-trans.webp'
-import VSLogo from '../../assets/logos/vscode.webp'
+import {
+    SiVisualstudiocode, 
+    SiPython, 
+    SiAngular, 
+    SiReact, 
+    SiVueDotJs,
+    SiSass,
+    SiBootstrap,
+    SiLaravel
+} from 'react-icons/si'
 
 import {HiArrowCircleDown} from 'react-icons/hi'
 
-import heroImg from '../../assets/backgrounds/hero-img.webp'
+import bgImg1 from '../../assets/backgrounds/hero-img.webp'
 import bgImg2 from '../../assets/backgrounds/web-dev-bg2.webp'
 import bgImg3 from '../../assets/backgrounds/web-dev-bg3.webp'
-
-const logos2 = [
-    ChromeLogo,
-    FirefoxLogo
-]
-const logos3 = [
-    AngularLogo,
-    PythonLogo,
-    VSLogo
-]
-const logos4 = [
-    ReactLogo,
-    BootstrapLogo
-]
-
 
 const Homepage = () => {
 
@@ -77,7 +64,7 @@ const Homepage = () => {
     return (
         <>
             <HomepageContainer id="Home">
-                <HeroImg  bgImg={heroImg}>
+                <HeroImg  bgImg={bgImg1}>
                     <TextContainer>
                         <WelcomeMessage>
                             Hello, <br />
@@ -85,19 +72,24 @@ const Homepage = () => {
                         </WelcomeMessage>
                         <HiArrowCircleDown id="downArrow" />
                     </TextContainer>
-                    <GoldBanner id="banner"/>
+                    <Banner id="banner"/>
                 </HeroImg>
                 <AboutContainer/>
                 <FixedImgBanner bgImg={bgImg2} height="250px">
-                    <LogoWrapper logos={logos2}></LogoWrapper>
+                    <SiAngular></SiAngular>
+                    <SiReact></SiReact>
+                    <SiVueDotJs></SiVueDotJs>
                 </FixedImgBanner>
                 <ProjectsContainer></ProjectsContainer>
                 <FixedImgBanner bgImg={bgImg3} height="250px">
-                    <LogoWrapper logos={logos3}></LogoWrapper>
+                    <SiPython></SiPython>
+                    <SiVisualstudiocode></SiVisualstudiocode>
                 </FixedImgBanner>
                 <ContactContainer />
                 <FixedImgBanner bgImg={bgImg3} height="250px">
-                    <LogoWrapper logos={logos4}></LogoWrapper>
+                    <SiSass></SiSass>
+                    <SiBootstrap></SiBootstrap>
+                    <SiLaravel></SiLaravel>
                 </FixedImgBanner>
             </HomepageContainer>
         </>

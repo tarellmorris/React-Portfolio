@@ -46,7 +46,7 @@ export const SubmitButton = styled.button`
     box-shadow: 0px 4px 8px 1px #000000a6;
 
     &:hover {
-        color: #e6b82f;
+        color: #3ee1a5;
         cursor: pointer;
     }
 `

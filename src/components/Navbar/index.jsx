@@ -36,7 +36,7 @@ class Navbar extends Component {
 
     render() {
         const boxShadow = "0px 4px 8px 1px #000000a6"
-        const textShadowLightFont = "1px 1px 1px #2e2e3b"
+        // const textShadowLightFont = "1px 1px 1px #52525a"
         const textShadowDarkFont = "1px 1px 1px #ffffff"
         const darkFont = "#2e2e3b"
 
@@ -50,7 +50,7 @@ class Navbar extends Component {
                         
                             <Brand 
                             fontcolor={this.state.isScrolled ? darkFont : "white"}
-                            textshadow={this.state.isScrolled ? textShadowDarkFont : textShadowLightFont}
+                            textshadow={this.state.isScrolled ? textShadowDarkFont : 'none'}
                             >
                                 <LinkR to="/">
                                     Tarell Morris
@@ -62,7 +62,7 @@ class Navbar extends Component {
                     </NavLinkWrapper>
                     <MobileMenu
                     fontcolor={this.state.isScrolled ? darkFont : "white"}
-                    textshadow={this.state.isScrolled ? textShadowDarkFont : textShadowLightFont}
+                    // textshadow={this.state.isScrolled ? textShadowDarkFont : textShadowLightFont}
                     >
                         <FiMenu 
                         className="hamburger"
