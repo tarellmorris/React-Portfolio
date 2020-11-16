@@ -88,8 +88,8 @@ const Homepage = () => {
                 <ContactContainer />
                 <FixedImgBanner bgImg={bgImg3} height="250px">
                     <SiSass></SiSass>
-                    <SiBootstrap></SiBootstrap>
                     <SiLaravel></SiLaravel>
+                    <SiBootstrap></SiBootstrap>
                 </FixedImgBanner>
             </HomepageContainer>
         </>
