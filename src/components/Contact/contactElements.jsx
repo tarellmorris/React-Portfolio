@@ -20,20 +20,28 @@ export const TextLabel = styled.label`
 `
 export const TextInput = styled.input`
     padding: 10px 15px;
-    border: #2e2e3b 2px solid;
+    border: #2e2e3b 3px solid;
     min-width: 350px;
     margin: 5px 25px;
     outline: none;
+
+    &:focus {
+        border: #3ee1a5 3px solid;
+    }
 `
 export const MessageLabel = styled.label`
     margin: 5px;
 `
 export const TextArea = styled.textarea`
     padding: 10px 15px;
-    border: #2e2e3b 2px solid;
+    border: #2e2e3b 3px solid;
     min-width: 350px;
     margin: 5px 25px;
     outline: none;
+
+    &:focus {
+        border: #3ee1a5 3px solid;
+    }
 `
 export const SubmitButton = styled.button`
     margin: 25px;
@@ -41,6 +49,7 @@ export const SubmitButton = styled.button`
     width: 300px;
     height: 50px;
     color: white;
+    border: solid 3px #2e2e3b;
     border-style: none;
     outline: none;
     box-shadow: 0px 4px 8px 1px #000000a6;

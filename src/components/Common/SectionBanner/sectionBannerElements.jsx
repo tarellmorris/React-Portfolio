@@ -17,5 +17,5 @@ export const SectionTitle = styled.h3`
     font-size: 40px;
     font-weight: 500;
     color: #2e2e3b;
-    text-shadow: 1px 1px 1px #ffffff;
+    // text-shadow: 1px 1px 1px #ffffff;
 `
