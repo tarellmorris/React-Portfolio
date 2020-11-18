@@ -1,4 +1,5 @@
 import React from 'react'
+import { useIntersection } from 'react-use'
 import FixedImgBanner from '../Common/FixedImgBanner'
 import SectionBanner from '../Common/SectionBanner'
 import {
@@ -77,6 +78,14 @@ const AboutContainer = () => {
         overcrowd my build with SASS stylesheets.`
     ]
 
+    const ref1 = React.useRef(null)
+    const ref2 = React.useRef(null)
+    const ref3 = React.useRef(null)
+
+    const intersection1 = useIntersection(ref1, {rootMargin: '-50px', threshold: .2})
+    const intersection2 = useIntersection(ref2, {rootMargin: '-50px', threshold: .2})
+    const intersection3 = useIntersection(ref3, {rootMargin: '-50px', threshold: .2})
+
     return (
         <AboutWrapper id="About">
 
@@ -92,6 +101,9 @@ const AboutContainer = () => {
                     <ImgDiv 
                     imgUrl={aboutImg1}
                     bgPos={"top"}
+                    ref={ref1}
+                    className={(intersection1&&intersection1.intersectionRatio < .2) ? 
+                        'hidden right' : 'visible'}
                     />
                 </GridWrap>
             </SectionBanner>
@@ -108,6 +120,9 @@ const AboutContainer = () => {
                     imgUrl={aboutImg2}
                     opac=".9"
                     bgPos="center"
+                    ref={ref2}
+                    className={(intersection2&&intersection2.intersectionRatio < .2) ? 
+                        'hidden left' : 'visible'}
                     />
                     <TextWrapper>
                         {textHolder2.map((details, index) => 
@@ -136,6 +151,9 @@ const AboutContainer = () => {
                     <ImgDiv 
                     imgUrl={aboutImg3}
                     bgPos={"top"}
+                    ref={ref3}
+                    className={(intersection3&&intersection3.intersectionRatio < .2) ? 
+                        'hidden right' : 'visible'}
                     />
                 </GridWrap>
             </SectionBanner>

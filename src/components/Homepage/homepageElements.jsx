@@ -10,7 +10,7 @@ export const HeroImg = styled.div`
     align-items: center;
     height: 96vh;
     width: 100%;
-    background: #2e2e3b;
+    // background: #2e2e3b;
     background-image: url(${props => props.bgImg});
     background-size: cover;
     background-repeat: no-repeat;
