@@ -106,20 +106,25 @@ export const Img = styled.div`
         transition: transform .25s, opacity .25s;
 
         & button {
-            background: #ac0101;
+            background: gray;
             padding: 10px;
             outline: none;
             border: none;
-            cursor: pointer;
             color: white;
+            text-align: center;
             transition: transform .25s;
 
-            &:hover {
-                transform: scale(1.1);;
-            }
+            &.add {
+                background: #ac0101;
+                cursor: pointer;
 
-            &:active {
-                transform: scale(0.9);
+                &:hover {
+                    transform: scale(1.1);;
+                }
+    
+                &:active {
+                    transform: scale(0.9);
+                }
             }
         }
     }
@@ -152,7 +157,7 @@ export const ItemCard = styled.div`
 // Shopping cart
 export const CartView = styled.div`
     position: absolute;
-    top: 22%;
+    top: 210px;
     left: 0;
     z-index: 2;
     display: flex;
@@ -169,11 +174,11 @@ export const CartView = styled.div`
     box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.75);
 
     @media screen and (max-width: 600px) {
-        top: 29%;
+        top: 275px;
     }
 
     @media screen and (max-width: 386px) {
-        top: 37%;
+        top: 350px;
     }
 
     &.visible {
@@ -191,8 +196,8 @@ export const CartView = styled.div`
         display: grid;
         justify-content: center;
         align-items: center;
-        grid-template-columns: minmax(300px, 600px);
-        grid-row-gap: 5px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 600px));
+        grid-gap: 5px;
         width: 100%;
         margin: 25px 0;
     }

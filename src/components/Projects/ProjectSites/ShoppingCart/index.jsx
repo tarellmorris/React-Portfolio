@@ -35,8 +35,11 @@ export const ShoppingCart = () => {
                         <ItemCard key={index}>
                             <Img url={item.imgUrl}>
                                 <div id="dropdown">
-                                    <button onClick={() => addToCart(item)}>
-                                        Add to cart
+                                    <button 
+                                    className={(!cart.includes(item)) ? 'add' : ''} 
+                                    onClick={() => addToCart(item)}
+                                    >
+                                        {(!cart.includes(item)) ? 'Add to cart' : 'Item in cart'}
                                     </button>
                                 </div>
                             </Img>

@@ -1,4 +1,5 @@
-import React from 'react'
+import React, {useRef} from 'react'
+import { useClickAway } from 'react-use'
 import {
     CartView,
     CartCard,
@@ -7,6 +8,13 @@ import {
 import {FiX} from 'react-icons/fi'
 
 export const Cart = (props) => {
+    const ref = useRef(null)
+
+    useClickAway(ref, () => {
+        let cart = document.querySelector('#cart')
+        cart.classList.remove('visible');
+      });
+
     const removeFromCart = (idToRemove) => {
         let newCart = props.cart.filter( item => item.key !== idToRemove )
         props.setCart(newCart)
@@ -17,7 +25,7 @@ export const Cart = (props) => {
     }, 0 )
 
     return (
-        <CartView id="cart">
+        <CartView id="cart" ref={ref}>
             {(props.cart.length > 0) ? 
                 <>
                     <h2>Shopping Cart ({props.cart.length})</h2>
@@ -28,19 +36,13 @@ export const Cart = (props) => {
                                 <div id="details">
                                     <p>{item.item}</p>
                                     <p>Price: ${item.cost}</p>
-                                    <select >
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                    </select>
+                                    <p>Quantity: {item.amount}</p>
                                 </div>
                                 <FiX onClick={() => removeFromCart(item.key)}></FiX>
                             </CartCard>
                         )}
                     </div>
-                    <p>Total Cost: ${currentTotal}</p>
+                    <p>Total Cost: ${currentTotal.toFixed(2)}</p>
                 </>
             : 
                 <>
