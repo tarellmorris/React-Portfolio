@@ -17,7 +17,7 @@ export const Cart = (props) => {
     }, 0 )
 
     return (
-        <CartView>
+        <CartView id="cart">
             {(props.cart.length > 0) ? 
                 <>
                     <h2>Shopping Cart ({props.cart.length})</h2>

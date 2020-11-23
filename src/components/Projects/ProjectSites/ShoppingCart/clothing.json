@@ -61,5 +61,47 @@
         "imgUrl": "https://lp2.hm.com/hmgoepprod?set=source[/12/19/12195a1df2963d5ca0aef0235ad0f2edc415c043.jpg],origin[dam],category[men_tshirtstanks_shortsleeve],type[DESCRIPTIVESTILLLIFE],res[w],hmver[1]&call=url[file:/product/main]",
         "amount": 1,
         "cost": 12.99
+    },
+    {
+        "key": 10,
+        "item": "Fleece Dress Robe",
+        "imgUrl": "https://lp2.hm.com/hmgoepprod?set=source[/23/76/23769d6155cb5a69dc31c2d9acd530d297a52fba.jpg],origin[dam],category[men_underwearloungewear_pyjamas],type[DESCRIPTIVESTILLLIFE],res[y],hmver[1]&call=url[file:/product/main]",
+        "amount": 1,
+        "cost": 34.99
+    },
+    {
+        "key": 11,
+        "item": "Puffer Jacket",
+        "imgUrl": "https://lp2.hm.com/hmgoepprod?set=source[/e1/6e/e16e5af49795ebfe4a2630612d039c24742bcd76.jpg],origin[dam],category[men_jacketscoats_puffer],type[DESCRIPTIVESTILLLIFE],res[y],hmver[1]&call=url[file:/product/main]",
+        "amount": 1,
+        "cost": 39.99
+    },
+    {
+        "key": 12,
+        "item": "Shirt Jacket",
+        "imgUrl": "https://lp2.hm.com/hmgoepprod?set=source[/78/d8/78d861e8d3810312fa789a7d43b4ae4028a7a4b8.jpg],origin[dam],category[men_jacketscoats_jackets],type[DESCRIPTIVESTILLLIFE],res[y],hmver[1]&call=url[file:/product/main]",
+        "amount": 1,
+        "cost": 49.99
+    },
+    {
+        "key": 13,
+        "item": "Fine-Knit Polo-Neck Jumper",
+        "imgUrl": "https://lp2.hm.com/hmgoepprod?set=source[/9e/06/9e0627232ca19c15316d0295d8f0952c881a348a.jpg],origin[dam],category[men_cardigansjumpers_turtleneck],type[DESCRIPTIVESTILLLIFE],res[y],hmver[1]&call=url[file:/product/main]",
+        "amount": 1,
+        "cost": 17.99
+    },
+    {
+        "key": 14,
+        "item": "Hat and Scart",
+        "imgUrl": "https://lp2.hm.com/hmgoepprod?set=source[/3c/d1/3cd1ea77e98fab44f4843dd93f64239500660e79.jpg],origin[dam],category[men_accessories_hatscaps_beanie],type[DESCRIPTIVESTILLLIFE],res[y],hmver[1]&call=url[file:/product/main]",
+        "amount": 1,
+        "cost": 12.99
+    },
+    {
+        "key": 15,
+        "item": "Long Sleeve Running Top",
+        "imgUrl": "https://lp2.hm.com/hmgoepprod?set=source[/9f/38/9f3873d6ccbc1d0bd7c993025df3aeef19452161.jpg],origin[dam],category[men_sport_tops],type[DESCRIPTIVESTILLLIFE],res[y],hmver[1]&call=url[file:/product/main]",
+        "amount": 1,
+        "cost": 14.99
     }
 ]

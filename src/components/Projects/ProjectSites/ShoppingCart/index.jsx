@@ -29,6 +29,7 @@ export const ShoppingCart = () => {
 
             <div id="appWrapper">                       
                 <Nav cart={cart}></Nav>
+                <Cart cart={cart} setCart={setCart}></Cart>
                 <SelectionView>
                     {options.map( (item, index) => 
                         <ItemCard key={index}>
@@ -47,7 +48,6 @@ export const ShoppingCart = () => {
                         </ItemCard>
                     )}
                 </SelectionView>
-                <Cart cart={cart} setCart={setCart}></Cart>
             </div>
 
             <FixedImgBanner bgImg={bgImg} height="250px"></FixedImgBanner>

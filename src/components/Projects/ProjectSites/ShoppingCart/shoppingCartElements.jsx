@@ -3,10 +3,11 @@ import styled from 'styled-components'
 export const ShoppingCartContainer = styled.div`
     & #appWrapper {
         display: grid;
-        grid-template-columns: 3fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: auto 3fr;
     }
 `
+// Navbar
 export const NavContainer = styled.div`
     grid-column: 1/3;
     grid-row: 1/1;
@@ -19,8 +20,16 @@ export const NavContainer = styled.div`
 
     & h1 {
         font-size: 3rem;
-        letter-spacing: 4px;
+        letter-spacing: 6px;
         margin-right: 10%;
+        font-family: 'Georgia', serif;
+    }
+
+    & p {
+        margin-left: 10px;
+        margin-top: 10px;
+        font-weight: bold;
+        cursor: pointer;
     }
 
     & #cartIconWrap {
@@ -28,88 +37,45 @@ export const NavContainer = styled.div`
 
         & svg {
             font-size: 2rem;
+            cursor: pointer;
+            transition: transform .25s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+            &:active {
+                transform: scale(0.9);
+            }
         }
         
         & p {
             position: absolute;
-            top: -20px;
+            top: -10px;
             left: 30px;
             font-size: .9rem;
-            padding: 2px 4px;
+            padding: 2px 8px;
             background: #ac0101;
             color: white;
             border-radius: 50px;
+            margin: 0;
+            cursor: auto;
         }
     }
 `
+// Clothing items
 export const SelectionView = styled.div`
+    position: relative;
     grid-column: 1;
     grid-row: 2;
     grid-gap: 5px;
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    padding: 25px;
-`
-export const CartView = styled.div`
-    grid-column: 2;
-    grid-row: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    border-left: 2px solid black;
-    padding: 25px;
-
-    & h2 {
-        font-size: 1.2rem;
-        font-weight: bold;
-    }
-
-    & #cartContainer {
-        display: grid;
-        grid-template-columns: minmax(300px, 1fr);
-        grid-row-gap: 5px;
-        width: 100%;
-        margin: 25px 0;
-    }
-`
-export const CartCard = styled.div`
-    display: flex;
-    position: relative;
-
-    & #details {
-        height: 100%;
-        & p {
-            font-size: .7rem;
-        }
-        & select {
-            font-size: .7rem
-        }
-    }
-    & svg {
-        position: absolute;
-        top: 0px;
-        right: 10px;
-        font-size: 1.2rem;
-        cursor: pointer;
-
-        &:hover {
-            color: #ac0101;
-        }
-    }
-`
-export const CartImg = styled.div`
-    height: 125px;
-    width: 100px;
-    background-image: url(${props => props.url});
-    background-position: center;
-    background-size: cover;
-    margin-right: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 50px 100px;
 `
 export const Img = styled.div`
-    height: 500px;
+    height: 400px;
     width: auto;
     overflow: hidden;
     background-image: url(${props => props.url});
@@ -129,7 +95,7 @@ export const Img = styled.div`
         transform: scale(2);
         opacity: 0;
         height: 100%;
-        transition: transform .3s, opacity .2s;
+        transition: transform .25s, opacity .25s;
 
         & button {
             background: #ac0101;
@@ -138,28 +104,35 @@ export const Img = styled.div`
             border: none;
             cursor: pointer;
             color: white;
+            transition: transform .25s;
 
             &:hover {
-                background: #9d0808;
+                transform: scale(1.1);;
+            }
+
+            &:active {
+                transform: scale(0.9);
             }
         }
     }
 `
 export const ItemCard = styled.div`
+    margin-bottom: 15px;
 
     & #description {
         position: relative;
         padding: 5px 0;
 
         & p {
-            font-size: .7rem;
+            font-size: .8rem;
+            letter-spacing: 2px;
         }
 
         & svg {
             position: absolute;
             top: 10px;
             right: 10px;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             cursor: pointer;
 
             &:hover {
@@ -168,3 +141,79 @@ export const ItemCard = styled.div`
         }
     }
 `
+// Shopping cart
+export const CartView = styled.div`
+    position: absolute;
+    top: 20%;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 25px;
+    height: 0;
+    width: 100%;
+    background: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: height .1s ease, opacity .25s ease;
+    box-shadow: 0px 10px 19px 2px rgba(0,0,0,0.75);
+
+    &.visible {
+        height: auto !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    & h2 {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    & #cartContainer {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: minmax(300px, 600px);
+        grid-row-gap: 5px;
+        width: 100%;
+        margin: 25px 0;
+    }
+`
+export const CartCard = styled.div`
+    display: flex;
+    position: relative;
+    background: #e7e6e430;;
+
+    & #details {
+        height: 100%;
+        padding: 5px;
+        & p {
+            font-size: .7rem;
+        }
+        & select {
+            font-size: .7rem
+        }
+    }
+    & svg {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        font-size: 1.2rem;
+        cursor: pointer;
+
+        &:hover {
+            color: #ac0101;
+        }
+    }
+`
+export const CartImg = styled.div`
+    height: 125px;
+    width: 100px;
+    background-image: url(${props => props.url});
+    background-position: center;
+    background-size: cover;
+    margin-right: 5px;
+`
+
