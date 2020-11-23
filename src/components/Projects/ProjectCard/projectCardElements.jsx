@@ -71,10 +71,4 @@ export const CardContainer = styled.div`
             transform: rotateY(.5turn);
         }
     }
-
-    // @media screen and (min-width: 960.5px) {
-    //     &:hover ${CardImgWrapper} {
-    //         transform: rotateY(.5turn);
-    //     }
-    // }
 `

@@ -1,15 +1,15 @@
-import React from 'react';
+import React from 'react'
 import {
     DropdownMenu
-} from './dropdownElements';
-import {Brand} from '../Navbar/navbarElements';
+} from './dropdownElements'
+import {Brand} from '../Navbar/navbarElements'
 import {NavLinkCondition} from '../Navbar/navLinkCondition'
-import {Link as LinkR} from 'react-router-dom';
-import {ImCross} from 'react-icons/im';
+import {Link as LinkR} from 'react-router-dom'
+import {ImCross} from 'react-icons/im'
 
 const Dropdown = props => {
     return (
-        <DropdownMenu 
+        <DropdownMenu
         display={(props.isOpen) ? 'flex' : 'none'}
         >
 

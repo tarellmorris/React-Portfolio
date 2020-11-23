@@ -70,7 +70,7 @@ export const NavContainer = styled.div`
         }
     }
 `
-// Clothing items
+// Clothing options
 export const SelectionView = styled.div`
     position: relative;
     grid-column: 1;
@@ -93,6 +93,7 @@ export const Img = styled.div`
     &:hover #dropdown {
         opacity: 1;
         transform: scale(1);
+        visibility: visible;
     }
 
     & #dropdown {
@@ -102,6 +103,7 @@ export const Img = styled.div`
         background: rgb(0,0,0,.5);
         transform: scale(2);
         opacity: 0;
+        visibility: hidden;
         height: 100%;
         transition: transform .25s, opacity .25s;
 
@@ -210,9 +212,12 @@ export const CartCard = styled.div`
     & #details {
         height: 100%;
         padding: 5px;
+        text-align: left;
+
         & p {
             font-size: .7rem;
         }
+
         & select {
             font-size: .7rem
         }

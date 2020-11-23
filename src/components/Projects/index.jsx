@@ -24,14 +24,14 @@ const ProjectsContainer = () => {
         {
             title: "Infinite scroll demo", 
             thumbnail: unsplashImg,
-            desc: "An infinite scroll app that uses the Unsplash API",
+            desc: "An infinite scroll demo made using the Unsplash API",
             path: '/infinitescroll'
             
         },
         {
-            title: "Weather app", 
+            title: "Weather API demo", 
             thumbnail: weatherImg,
-            desc: "A weather app made using the OpenWeatherMap API",
+            desc: "A weather demo made using the OpenWeatherMap API",
             path: "/weatherapp",
         },
         {

@@ -40,7 +40,6 @@ class App extends Component {
             { isOpen: !this.state.isOpen }
         )
     }
-    
     render() {
         return (
                 <div className="siteWrapper">

@@ -1,5 +1,4 @@
-import React, {useRef} from 'react'
-import { useClickAway } from 'react-use'
+import React from 'react'
 import {
     CartView,
     CartCard,
@@ -8,12 +7,6 @@ import {
 import {FiX} from 'react-icons/fi'
 
 export const Cart = (props) => {
-    const ref = useRef(null)
-
-    useClickAway(ref, () => {
-        let cart = document.querySelector('#cart')
-        cart.classList.remove('visible');
-      });
 
     const removeFromCart = (idToRemove) => {
         let newCart = props.cart.filter( item => item.key !== idToRemove )
@@ -25,7 +18,7 @@ export const Cart = (props) => {
     }, 0 )
 
     return (
-        <CartView id="cart" ref={ref}>
+        <CartView id="cart">
             {(props.cart.length > 0) ? 
                 <>
                     <h2>Shopping Cart ({props.cart.length})</h2>

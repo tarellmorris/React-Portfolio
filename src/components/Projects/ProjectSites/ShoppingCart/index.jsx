@@ -28,8 +28,9 @@ export const ShoppingCart = () => {
             <FixedImgBanner bgImg={bgImg} height="80px"></FixedImgBanner>
 
             <div id="appWrapper">                       
-                <Nav cart={cart}></Nav>
-                <Cart cart={cart} setCart={setCart}></Cart>
+                <Nav cart={cart}>
+                    <Cart cart={cart} setCart={setCart}></Cart>
+                </Nav>
                 <SelectionView>
                     {options.map( (item, index) => 
                         <ItemCard key={index}>
