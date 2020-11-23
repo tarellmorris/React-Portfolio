@@ -13,9 +13,10 @@ const Nav = (props) => {
             <h1>Clothes Co.</h1>
             <div id="cartIconWrap">
                 <FaShoppingBag onClick={openCart} />
-                {(props.cart.length > 0) && <p>{props.cart.length}</p> }
+                {(props.cart.length > 0) && <label>{props.cart.length}</label> }
+
+                <p onClick={openCart} >View cart</p>
             </div>
-            <p onClick={openCart} >View cart</p>
         </NavContainer>
     )
 }

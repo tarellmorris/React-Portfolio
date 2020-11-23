@@ -12,28 +12,29 @@ export const NavContainer = styled.div`
     grid-column: 1/3;
     grid-row: 1/1;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
     padding: 25px;
     border-bottom: 4px solid black;
 
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+
     & h1 {
         font-size: 3rem;
         letter-spacing: 6px;
-        margin-right: 10%;
         font-family: 'Georgia', serif;
-    }
-
-    & p {
-        margin-left: 10px;
-        margin-top: 10px;
-        font-weight: bold;
-        cursor: pointer;
     }
 
     & #cartIconWrap {
         position: relative;
+        display: flex;
+
+        @media screen and (max-width: 600px) {
+            margin-top: 25px;
+        }
 
         & svg {
             font-size: 2rem;
@@ -47,8 +48,15 @@ export const NavContainer = styled.div`
                 transform: scale(0.9);
             }
         }
-        
+
         & p {
+            margin-left: 10px;
+            margin-top: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        & label {
             position: absolute;
             top: -10px;
             left: 30px;
@@ -72,10 +80,10 @@ export const SelectionView = styled.div`
     justify-content: center;
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    padding: 50px 100px;
+    padding: 25px;
 `
 export const Img = styled.div`
-    height: 400px;
+    height: 500px;
     width: auto;
     overflow: hidden;
     background-image: url(${props => props.url});
@@ -144,7 +152,7 @@ export const ItemCard = styled.div`
 // Shopping cart
 export const CartView = styled.div`
     position: absolute;
-    top: 20%;
+    top: 22%;
     left: 0;
     z-index: 2;
     display: flex;
@@ -158,7 +166,15 @@ export const CartView = styled.div`
     visibility: hidden;
     opacity: 0;
     transition: height .1s ease, opacity .25s ease;
-    box-shadow: 0px 10px 19px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.75);
+
+    @media screen and (max-width: 600px) {
+        top: 29%;
+    }
+
+    @media screen and (max-width: 386px) {
+        top: 37%;
+    }
 
     &.visible {
         height: auto !important;
