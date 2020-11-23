@@ -27,6 +27,7 @@ export const TextInput = styled.input`
 
     &:focus {
         border: #3ee1a5 3px solid;
+        box-shadow: 0px 3px 15px 0px #000000a6;
     }
 `
 export const MessageLabel = styled.label`
@@ -41,6 +42,7 @@ export const TextArea = styled.textarea`
 
     &:focus {
         border: #3ee1a5 3px solid;
+        box-shadow: 0px 3px 15px 0px #000000a6;
     }
 `
 export const SubmitButton = styled.button`
