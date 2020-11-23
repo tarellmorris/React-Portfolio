@@ -7,13 +7,20 @@ import {Link as LinkR} from 'react-router-dom'
 import bobImg from '../../assets/thumbnails/bobs-port.webp'
 import infoImg from "../../assets/thumbnails/panel-stock.webp"
 import rpsImg from "../../assets/thumbnails/rps-port.webp"
-import questImg from "../../assets/thumbnails/question.webp"
 import weatherImg from "../../assets/thumbnails/weather-stock.webp"
 import unsplashImg from "../../assets/thumbnails/unsplash.webp"
+import shoppingImg from "../../assets/thumbnails/shopping.webp"
 
 
 const ProjectsContainer = () => {
     const data = [
+        {
+            title: "Shopping cart demo", 
+            thumbnail: shoppingImg,
+            desc: "A demonstration of shopping cart functionality",
+            path: '/shoppingcart'
+            
+        },
         {
             title: "Infinite scroll demo", 
             thumbnail: unsplashImg,
@@ -44,12 +51,6 @@ const ProjectsContainer = () => {
             thumbnail: rpsImg,
             desc: "An interactive rock paper scissors game powered by JavaScript",
             path: "/rockpaperscissors",
-        },
-        {
-            title: "Coming soon", 
-            thumbnail: questImg,
-            desc: "Under development...",
-            path: ''
         }
     ];
 

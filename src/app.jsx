@@ -1,29 +1,29 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import {
     BrowserRouter as Router,
     Switch,
     Route
-} from 'react-router-dom';
-import './styles/app.sass';
+} from 'react-router-dom'
+import './styles/app.sass'
 
-import Navbar from './components/Navbar';
-import Homepage from './components/Homepage';
-import FooterContainer from  './components/Footer';
-import Dropdown from './components/Dropdown';
-import ScrollToTop from './components/Common/ScrollToTop';
-import ProjectsContainer from './components/Projects';
+import Navbar from './components/Navbar'
+import Homepage from './components/Homepage'
+import FooterContainer from  './components/Footer'
+import Dropdown from './components/Dropdown'
+import ScrollToTop from './components/Common/ScrollToTop'
+import ProjectsContainer from './components/Projects'
 import FixedImgBanner from './components/Common/FixedImgBanner'
 import AboutContainer from './components/About'
 import ContactContainer from './components/Contact'
 
-import bgImg from './assets/backgrounds/web-dev-bg3.webp';
+import bgImg from './assets/backgrounds/web-dev-bg3.webp'
 
-import RockPaperScissors from './components/Projects/ProjectSites/RockPaperScissors';
+import RockPaperScissors from './components/Projects/ProjectSites/RockPaperScissors'
 import Infographic from './components/Projects/ProjectSites/Infographic'
-import BobsBurgers from './components/Projects/ProjectSites/BobsBurgers';
-import {WeatherApp} from './components/Projects/ProjectSites/WeatherApp';
-import {InfiniteScrollUnsplash} from './components/Projects/ProjectSites/InfiniteScrollUnsplash';
-
+import BobsBurgers from './components/Projects/ProjectSites/BobsBurgers'
+import {WeatherApp} from './components/Projects/ProjectSites/WeatherApp'
+import {InfiniteScrollUnsplash} from './components/Projects/ProjectSites/InfiniteScrollUnsplash'
+import {ShoppingCart} from './components/Projects/ProjectSites/ShoppingCart'
 
 class App extends Component {
     constructor() {
@@ -84,6 +84,9 @@ class App extends Component {
                                 </Route>
                                 <Route path="/infinitescroll">
                                     <InfiniteScrollUnsplash></InfiniteScrollUnsplash>
+                                </Route>
+                                <Route path="/shoppingcart">
+                                    <ShoppingCart/>
                                 </Route>
                         </Switch>
                         <FooterContainer /> 

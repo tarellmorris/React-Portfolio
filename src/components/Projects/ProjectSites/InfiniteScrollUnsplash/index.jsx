@@ -24,7 +24,7 @@ export const InfiniteScrollUnsplash = () => {
 
     const fetchData = () => {
         const base = "https://api.unsplash.com/"
-        const access = "RyBU0xIJpi4TZmYGP-TM7uDgELSGyX38bvdu7TCH7FA"
+        const access = "U2_Ob0tzziuN17Km_N3eK1zUgHvEsRRy_uDVhhna_co"
 
         Axios.get(`${base}photos/random?client_id=${access}&count=10`)
         .then(result => 

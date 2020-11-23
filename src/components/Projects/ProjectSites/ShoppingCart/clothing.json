@@ -1,0 +1,65 @@
+[
+    {
+        "key": 1,
+        "item": "Parka",
+        "imgUrl": "https://lp2.hm.com/hmgoepprod?set=source[/6b/13/6b13f3c47ad0a9e9d64827bd55944a4663074fe5.jpg],origin[dam],category[men_jacketscoats_parkas],type[DESCRIPTIVESTILLLIFE],res[w],hmver[1]&call=url[file:/product/main]",
+        "amount": 1,
+        "cost": 49.99
+    },
+    {
+        "key": 2,
+        "item": "Printed Hoodie Gray",
+        "imgUrl": "https://lp2.hm.com/hmgoepprod?set=source[/fb/1f/fb1fa680a19e9d08c54035b337fdd6d37cae75a4.jpg],origin[dam],category[men_hoodiessweatshirts_hoodies],type[DESCRIPTIVESTILLLIFE],res[w],hmver[1]&call=url[file:/product/main]",
+        "amount": 1,
+        "cost": 19.99
+    },
+    {
+        "key": 3,
+        "item": "Printed Hoodie Magenta",
+        "imgUrl": "https://lp2.hm.com/hmgoepprod?set=source[/58/0e/580ed045282ecbcb026ce93a1de68ca7f26267ac.jpg],origin[dam],category[men_hoodiessweatshirts_hoodies],type[DESCRIPTIVESTILLLIFE],res[w],hmver[1]&call=url[file:/product/main]",
+        "amount": 1,
+        "cost": 19.99
+    },
+    {
+        "key": 4,
+        "item": "Pyjama Set",
+        "imgUrl": "https://lp2.hm.com/hmgoepprod?set=source[/13/7d/137d1f58bf31298d19926a2aafdd5746b57eeed6.jpg],origin[dam],category[men_nightwearloungewear_pyjamas],type[DESCRIPTIVESTILLLIFE],res[w],hmver[1]&call=url[file:/product/main]",
+        "amount": 1,
+        "cost": 24.99
+    },
+    {
+        "key": 5,
+        "item": "Lined Shirt Jacket",
+        "imgUrl": "https://lp2.hm.com/hmgoepprod?set=source[/fc/3d/fc3d6a0e890e9c34b216c5ec3c5ee6f5e479c4ea.jpg],origin[dam],category[men_jacketscoats_jackets],type[DESCRIPTIVESTILLLIFE],res[w],hmver[1]&call=url[file:/product/main]",
+        "amount": 1,
+        "cost": 29.99
+    },
+    {
+        "key": 6,
+        "item": "Faux Shear Jacket",
+        "imgUrl": "https://lp2.hm.com/hmgoepprod?set=source[/f1/d6/f1d670e576e7e8fdaec6dcc3642a98e5ef7963f9.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[w],hmver[1]&call=url[file:/product/main]",
+        "amount": 1,
+        "cost": 17.99
+    },
+    {
+        "key": 7,
+        "item": "Sport Trunks 3-Pack",
+        "imgUrl": "https://lp2.hm.com/hmgoepprod?set=source[/04/c4/04c418231a6686574c56889ec71c3a8b8b5b74c9.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[w],hmver[1]&call=url[file:/product/main]",
+        "amount": 1,
+        "cost": 12.99
+    },
+    {
+        "key": 8,
+        "item": "Printed Long Sleeve",
+        "imgUrl": "https://lp2.hm.com/hmgoepprod?set=source[/4f/88/4f8803abf95a8a482b1904e25ed3dab3ba1328d8.jpg],origin[dam],category[men_tshirtstanks_longsleeve],type[DESCRIPTIVESTILLLIFE],res[w],hmver[1]&call=url[file:/product/main]",
+        "amount": 1,
+        "cost": 13.99
+    },
+    {
+        "key": 9,
+        "item": "Printed T-Shirt",
+        "imgUrl": "https://lp2.hm.com/hmgoepprod?set=source[/12/19/12195a1df2963d5ca0aef0235ad0f2edc415c043.jpg],origin[dam],category[men_tshirtstanks_shortsleeve],type[DESCRIPTIVESTILLLIFE],res[w],hmver[1]&call=url[file:/product/main]",
+        "amount": 1,
+        "cost": 12.99
+    }
+]
