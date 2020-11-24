@@ -10,7 +10,6 @@ export const HeroImg = styled.div`
     align-items: center;
     height: 96vh;
     width: 100%;
-    // background: #2e2e3b;
     background-image: url(${props => props.bgImg});
     background-size: cover;
     background-repeat: no-repeat;
@@ -67,6 +66,5 @@ export const WelcomeMessage = styled.h1`
     font-size: 55px;
     margin-bottom: 100px;
     padding: 10px;
-    // text-shadow: 1px 1px 1px #2e2e3b;
     user-select: none;
 `

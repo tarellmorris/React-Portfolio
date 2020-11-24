@@ -9,9 +9,6 @@ export const NavLinkCondition = (props) => {
     const location = useLocation()
     const links = [
         {
-            page: "Home"
-        },
-        {
             page: "About"
         },
         {

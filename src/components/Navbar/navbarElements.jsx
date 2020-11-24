@@ -67,7 +67,6 @@ export const NavLink = styled(LinkScroll)`
         font-size: 1.1rem;
         cursor: pointer;
         color: ${props => props.fontcolor};
-        // text-shadow: ${props => props.textshadow};
         font-weight: 400;
         border-bottom: 5px transparent solid;
         user-select: none;
@@ -82,7 +81,6 @@ export const NavLinkR = styled(LinkR)`
         font-size: 1.1rem;
         cursor: pointer;
         color: ${props => props.fontcolor};
-        // text-shadow: ${props => props.textshadow};
         font-weight: 400;
         border-bottom: 5px transparent solid;
         user-select: none;
@@ -93,7 +91,6 @@ export const NavLinkR = styled(LinkR)`
 
         &:visited {
             color: ${props => props.fontcolor};
-            // text-shadow: ${props => props.textshadow};
             user-select: none;
 `
 export const MobileMenu = styled.div`
@@ -110,6 +107,5 @@ export const MobileMenu = styled.div`
         align-items: center;
         cursor: pointer;
         color: ${props => props.fontcolor};
-        // filter: drop-shadow( ${props => props.textshadow} );
     }
 `
