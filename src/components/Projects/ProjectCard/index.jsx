@@ -1,4 +1,5 @@
 import React from 'react';
+import { useIntersection } from 'react-use'
 import {
     CardContainer,
     CardHead,
@@ -9,13 +10,22 @@ import {
 } from './projectCardElements';
 
 const ProjectCard = props => {
+    const ref = React.useRef(null)
+    const inter = useIntersection(ref, {rootMargin: '10px', threshold: .2})
+
     return (
-        <CardContainer>
+        <CardContainer 
+        ref={ref}
+        className={(inter&&inter.intersectionRatio < .2) ? 'hidden bottom' : 'visible'}
+        >
             <CardHead>
                 <CardTitle>{props.cardTitle}</CardTitle>    
             </CardHead>  
             <CardImgWrapper>
-                <Frontside thumb={props.thumb}></Frontside>
+                <Frontside 
+                thumb={props.thumb}
+                className={(inter&&inter.intersectionRatio < .2) ? 'hidden bottom' : 'visible'}
+                ></Frontside>
                 <Backside>{props.cardDesc}</Backside>
             </CardImgWrapper>        
         </CardContainer>

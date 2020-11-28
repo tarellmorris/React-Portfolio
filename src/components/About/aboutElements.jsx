@@ -1,22 +1,7 @@
 import styled from 'styled-components';
 
 export const AboutWrapper = styled.div`
-    .visible {
-        opacity: 1;
-        transform: none;
-    }
-    .hidden {
-        opacity: 0;
-    }
-    .right {
-        transform: translateX(25px);
-    }
-    .left {
-        transform: translateX(-25px);
-    }
-    .bottom {
-        transform: translateY(-25px);
-    }
+
 `
 export const ImgDiv = styled.div`
     min-width: 350px;
@@ -24,11 +9,25 @@ export const ImgDiv = styled.div`
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(${props => props.imgUrl});
     opacity: ${props => props.opac};
     box-shadow: 0px 4px 8px 1px #000000a6;
     overflow: hidden;
-    transition: .5s ease;
+    transition: transform .5s ease, opacity .5s ease;
+
+    &.visible {
+        background-image: url(${props => props.imgUrl});
+        opacity: 1;
+        transform: none;
+    }
+    &.hidden {
+        opacity: 0;
+    }
+    &.right {
+        transform: translateX(25px);
+    }
+    &.left {
+        transform: translateX(-25px);
+    }
 `
 export const TextWrapper = styled.div`
     min-width: 300px;
@@ -58,6 +57,10 @@ export const GridWrap = styled.div`
             max-width: 350px;
             height: auto;
             justify-self: center;
+
+            &.bottom {
+                transform: translateY(25px);
+            }
         }
 
         ${TextWrapper} {

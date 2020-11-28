@@ -18,8 +18,7 @@ const ProjectsContainer = () => {
             title: "Shopping cart demo", 
             thumbnail: shoppingImg,
             desc: "A demonstration of shopping cart functionality",
-            path: '/shoppingcart'
-            
+            path: '/shoppingcart'          
         },
         {
             title: "Infinite scroll demo", 
@@ -32,29 +31,29 @@ const ProjectsContainer = () => {
             title: "Weather API demo", 
             thumbnail: weatherImg,
             desc: "A weather demo made using the OpenWeatherMap API",
-            path: "/weatherapp",
+            path: "/weatherapp"
         },
         {
             title: "Bob's burgers homepage", 
             thumbnail: bobImg,
             desc: "A homepage mockup for the fictional Bob's Burgers restaurant",
-            path: "/bobsburgers",
+            path: "/bobsburgers"
         },
         {
             title: "Interactive infographic", 
             thumbnail: infoImg,
             desc: "An interactive infographic made for Definitive Healthcare",
-            path: "/infographic",
+            path: "/infographic"
         },
         {
             title: "Rock paper scissors game", 
             thumbnail: rpsImg,
             desc: "An interactive rock paper scissors game powered by JavaScript",
-            path: "/rockpaperscissors",
+            path: "/rockpaperscissors"
         }
-    ];
+    ]
 
-    const projectsHeader = 'Take a look at my projects';
+    const projectsHeader = 'Take a look at my projects'
 
     return (  
         <div id="Projects" >      

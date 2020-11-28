@@ -4,15 +4,19 @@ import {
 } from './dropdownElements'
 import {Brand} from '../Navbar/navbarElements'
 import {NavLinkCondition} from '../Navbar/navLinkCondition'
+import { useClickAway } from 'react-use'
 import {Link as LinkR} from 'react-router-dom'
 import {ImCross} from 'react-icons/im'
 
 const Dropdown = props => {
-    return (
-        <DropdownMenu
-        display={(props.isOpen) ? 'flex' : 'none'}
-        >
+    const ref = React.useRef()
 
+    useClickAway(ref, () => {
+        props.handle()
+      })
+
+    return (
+        <DropdownMenu className={(props.isOpen) ? 'show' : 'hide'} ref={ref}>
             <Brand className="brand">
                 <LinkR to="/">
                     Tarell Morris
@@ -23,9 +27,7 @@ const Dropdown = props => {
             className="cross"
             onClick={props.onClick}
             />
-
             <NavLinkCondition onClick={props.onClick} isScrolled={true}></NavLinkCondition>
-
         </DropdownMenu>
     )
 }

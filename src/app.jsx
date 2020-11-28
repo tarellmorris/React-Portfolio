@@ -30,6 +30,7 @@ class App extends Component {
         super();
 
         this.handleClick = this.handleClick.bind(this)
+        this.handleClickAway = this.handleClickAway.bind(this)
         this.state = {
             isOpen: false,
         };
@@ -40,15 +41,26 @@ class App extends Component {
             { isOpen: !this.state.isOpen }
         )
     }
+
+    handleClickAway() {
+        this.setState(
+            { isOpen: false}
+        )
+    }
+
     render() {
         return (
                 <div className="siteWrapper">
                     <Router>
                         <ScrollToTop></ScrollToTop>
-                        <Navbar onClick={this.handleClick} />
+                        <Navbar 
+                        isOpen={this.state.isOpen}
+                        onClick={this.handleClick} 
+                        />
                         <Dropdown 
                         isOpen={this.state.isOpen}
                         onClick={this.handleClick}
+                        handle={this.handleClickAway}
                         />
                             <Switch>
                                 <Route exact path="/">

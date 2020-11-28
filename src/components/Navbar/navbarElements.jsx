@@ -18,6 +18,17 @@ export const Nav = styled.nav`
     font-size: 1rem;
     box-shadow: ${props => props.boxshadow};
     transition: .25s ease;
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &.hide {
+        top: -80px;
+        opacity: 0;
+        visibility: hidden;
+    }
 `
 export const NavContainer = styled.div`
     display: flex;

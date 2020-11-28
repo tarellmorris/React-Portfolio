@@ -31,12 +31,15 @@ export const Frontside = styled.div`
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(${props => props.thumb});
     width: 350px;
     height: 350px;
     transform: translateZ(0px);
     opacity: .9;
     backface-visibility: hidden;
+
+    &.visible {
+        background-image: url(${props => props.thumb});
+    }
 `
 export const Backside = styled.p`
     display: flex;
@@ -59,6 +62,7 @@ export const CardContainer = styled.div`
     background: #222222;
     box-shadow: 0px 4px 8px 1px #000000a6;
     overflow: hidden;
+    transition: .5s ease;
 
     &:hover {
         cursor: pointer;
@@ -70,5 +74,16 @@ export const CardContainer = styled.div`
         & ${CardImgWrapper} {
             transform: rotateY(.5turn);
         }
+    }
+
+    &.visible {
+        opacity: 1;
+        transform: none;
+    }
+    &.hidden {
+        opacity: 0;
+    }
+    &.bottom {
+        transform: translateY(25px);
     }
 `

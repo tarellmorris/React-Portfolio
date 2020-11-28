@@ -52,6 +52,7 @@ class Navbar extends Component {
             <Nav 
             bgcolor={this.state.isScrolled ? "white" : "transparent"}
             boxshadow={this.state.isScrolled ? boxShadow : "none"}
+            className={(this.props.isOpen) ? 'hide' : 'show'}
             >
                 <NavContainer>
                     <BrandWrapper>

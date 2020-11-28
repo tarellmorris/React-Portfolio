@@ -1,19 +1,32 @@
 import styled from 'styled-components';
 
 export const DropdownMenu = styled.div`
-    display: ${props => props.display};
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: fixed;
     width: 100%;
     padding: 80px 25px 25px;
-    top: 0;
+    top: -500px;
     right: 0;
     background: white;
     z-index: 20;
-    transition: .5s ease;
+    transition: .25s ease;
     box-shadow: 0px 4px 8px 1px #000000a6;
+    overflow: hidden;
+
+    &.show {
+        top: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &.hide {
+        opacity: 0;
+        visibility: hidden;
+    }
+
 
     & .cross {
         font-size: 26px;

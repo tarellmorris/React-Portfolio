@@ -13,7 +13,7 @@ const Nav = (props) => {
 
     useClickAway(ref, () => {
         let cart = document.querySelector('#cart')
-        cart.classList.remove('visible');
+        cart.classList.remove('visible')
       })
 
     return (
