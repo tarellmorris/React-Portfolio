@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import {Accent} from '../../../styles/theme'
 
 export const ArrowContainer = styled.div`
     position: fixed;
@@ -8,6 +9,7 @@ export const ArrowContainer = styled.div`
     transform: translateY(50px);
     opacity: 0;
     visibility: hidden;
+    z-index: 20;
 
     &.visible {
         transform: none;
@@ -17,7 +19,7 @@ export const ArrowContainer = styled.div`
 
     & svg {
         font-size: 4.5rem;
-        color: #3ee1a5;
+        color: ${Accent};
         opacity: .7;
         cursor: pointer;
         filter: drop-shadow(0px 0px 1px #000000a6);

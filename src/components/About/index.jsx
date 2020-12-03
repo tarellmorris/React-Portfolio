@@ -1,5 +1,5 @@
 import React from 'react'
-import { useIntersection } from 'react-use'
+import {useIntersection} from 'react-use'
 import FixedImgBanner from '../Common/FixedImgBanner'
 import SectionBanner from '../Common/SectionBanner'
 import {
@@ -18,7 +18,7 @@ import aboutImg1 from '../../assets/tarell/tarell.webp'
 import aboutImg2 from '../../assets/stock/books.webp'
 import aboutImg3 from '../../assets/logos/react-logo.webp'
 
-const AboutContainer = () => {
+const AboutContainer = props => {
     const titles = [
         "Let me tell you a bit about myself",
         "There's always more to learn",
@@ -87,78 +87,78 @@ const AboutContainer = () => {
     const intersection3 = useIntersection(ref3, {rootMargin: '10px', threshold: .2})
 
     return (
-        <AboutWrapper id="About">
+            <AboutWrapper id="About">
 
-            <SectionBanner sectionTitle={titles[0]}>
-                <GridWrap template="2fr 1fr">
-                    <TextWrapper>
-                        {textHolder1.map((details, index) => 
-                            <PBlock key={index}>
-                                {details}
-                            </PBlock>
-                        )}
-                    </TextWrapper>
-                    <ImgDiv 
-                    imgUrl={aboutImg1}
-                    bgPos={"top"}
-                    ref={ref1}
-                    className={(intersection1&&intersection1.intersectionRatio < .2) ? 
-                        'hidden right bottom' : 'visible'}
-                    />
-                </GridWrap>
-            </SectionBanner>
+                <SectionBanner sectionTitle={titles[0]}>
+                    <GridWrap template="2fr 1fr">
+                        <TextWrapper>
+                            {textHolder1.map((details, index) => 
+                                <PBlock key={index}>
+                                    {details}
+                                </PBlock>
+                            )}
+                        </TextWrapper>
+                        <ImgDiv 
+                        imgUrl={aboutImg1}
+                        bgPos={"top"}
+                        ref={ref1}
+                        className={(intersection1&&intersection1.intersectionRatio < .2) ? 
+                            'hidden right bottom' : 'visible'}
+                        />
+                    </GridWrap>
+                </SectionBanner>
 
-            <FixedImgBanner bgImg={bgImg2} height="250px">
-                <SiHtml5></SiHtml5>
-                <SiCss3></SiCss3>
-                <SiJavascript></SiJavascript>
-            </FixedImgBanner>
+                <FixedImgBanner bgImg={bgImg2} height="250px">
+                    <SiHtml5></SiHtml5>
+                    <SiCss3></SiCss3>
+                    <SiJavascript></SiJavascript>
+                </FixedImgBanner>
 
-            <SectionBanner sectionTitle={titles[1]}>
-                <GridWrap template="1fr 2fr">
-                    <ImgDiv 
-                    imgUrl={aboutImg2}
-                    opac=".9"
-                    bgPos="center"
-                    ref={ref2}
-                    className={(intersection2&&intersection2.intersectionRatio < .2) ? 
-                        'hidden left bottom' : 'visible'}
-                    />
-                    <TextWrapper>
-                        {textHolder2.map((details, index) => 
-                            <PBlock key={index}>
-                                {details}
-                            </PBlock>
-                        )}
-                    </TextWrapper>
-                </GridWrap>
-            </SectionBanner>
+                <SectionBanner sectionTitle={titles[1]}>
+                    <GridWrap template="1fr 2fr">
+                        <ImgDiv 
+                        imgUrl={aboutImg2}
+                        opac=".9"
+                        bgPos="center"
+                        ref={ref2}
+                        className={(intersection2&&intersection2.intersectionRatio < .2) ? 
+                            'hidden left bottom' : 'visible'}
+                        />
+                        <TextWrapper>
+                            {textHolder2.map((details, index) => 
+                                <PBlock key={index}>
+                                    {details}
+                                </PBlock>
+                            )}
+                        </TextWrapper>
+                    </GridWrap>
+                </SectionBanner>
 
-            <FixedImgBanner bgImg={bgImg2} height="250px">
-                <FaChrome></FaChrome>
-                <FaFirefoxBrowser></FaFirefoxBrowser>
-            </FixedImgBanner>
+                <FixedImgBanner bgImg={bgImg2} height="250px">
+                    <FaChrome></FaChrome>
+                    <FaFirefoxBrowser></FaFirefoxBrowser>
+                </FixedImgBanner>
 
-            <SectionBanner sectionTitle={titles[2]}>
-                <GridWrap template="2fr 1fr">
-                    <TextWrapper>
-                        {textHolder3.map((details, index) => 
-                            <PBlock key={index}>
-                                {details}
-                            </PBlock>
-                        )}
-                    </TextWrapper>
-                    <ImgDiv 
-                    imgUrl={aboutImg3}
-                    bgPos={"top"}
-                    ref={ref3}
-                    className={(intersection3&&intersection3.intersectionRatio < .2) ? 
-                        'hidden right bottom' : 'visible'}
-                    />
-                </GridWrap>
-            </SectionBanner>
+                <SectionBanner sectionTitle={titles[2]}>
+                    <GridWrap template="2fr 1fr">
+                        <TextWrapper>
+                            {textHolder3.map((details, index) => 
+                                <PBlock key={index}>
+                                    {details}
+                                </PBlock>
+                            )}
+                        </TextWrapper>
+                        <ImgDiv 
+                        imgUrl={aboutImg3}
+                        bgPos={"top"}
+                        ref={ref3}
+                        className={(intersection3&&intersection3.intersectionRatio < .2) ? 
+                            'hidden right bottom' : 'visible'}
+                        />
+                    </GridWrap>
+                </SectionBanner>
 
-        </AboutWrapper>
+            </AboutWrapper>
     )
 }
 

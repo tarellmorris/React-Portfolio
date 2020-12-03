@@ -1,8 +1,14 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
+import {Color, Accent} from '../../../../styles/theme'
 
 export const RPSContainer = styled.div`
     background: #1a1a1a;
     color: white;
+
+    & ::selection {
+        background: ${Accent};
+        color: ${Color};
+    }
 `
 export const Header = styled.div`
     background: white;

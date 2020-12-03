@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
+import {Color, Accent} from '../../styles/theme'
 
 export const ProjectsWrapper = styled.div`
     display: flex;
@@ -11,6 +12,11 @@ export const ProjectsWrapper = styled.div`
 
     & a {
         margin: 35px;
+    }
+
+    & ::selection {
+        background: ${Accent};
+        color: ${Color};
     }
 
     @media screen and (max-width: 1675px) {

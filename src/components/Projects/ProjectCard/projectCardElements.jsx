@@ -1,7 +1,5 @@
 import styled from 'styled-components';
-
-const transition = '.75s ease';
-
+import {Accent} from '../../../styles/theme'
 
 export const CardImgWrapper = styled.div`
     display: flex;
@@ -11,7 +9,7 @@ export const CardImgWrapper = styled.div`
     width: 350px;
     text-align: center;
     position: relative;
-    transition: ${transition};
+    transition: .5s ease;
     transform-style: preserve-3d;
 `
 export const CardHead = styled.div`
@@ -51,9 +49,9 @@ export const Backside = styled.p`
     backface-visibility: hidden;
     transform: translateZ(0px);
     transform: rotateY(180deg);
-    background: white;
+    background: ${Accent};
     padding: 25px;
-    color: #2e2e3b;
+    color: #222222;
     user-select: none;
 `
 export const CardContainer = styled.div`
@@ -62,13 +60,13 @@ export const CardContainer = styled.div`
     background: #222222;
     box-shadow: 0px 4px 8px 1px #000000a6;
     overflow: hidden;
-    transition: .5s ease;
+    transition: .25s ease;
 
     &:hover {
         cursor: pointer;
 
         & ${CardTitle} {
-            color: #3ee1a5;
+            color: ${Accent};
         }
 
         & ${CardImgWrapper} {

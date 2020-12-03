@@ -1,7 +1,13 @@
 import styled from 'styled-components'
+import {Color, Accent} from '../../../../styles/theme'
 
 export const InfiniteScrollContainer = styled.div`
     width: 100%
+
+    & ::selection {
+        background: ${Accent};
+        color: ${Color};
+    }
 `
 export const Header = styled.div`
     display: flex;

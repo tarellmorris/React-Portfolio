@@ -25,7 +25,7 @@ export const ShoppingCart = () => {
 
     return (
         <ShoppingCartContainer>
-            <FixedImgBanner bgImg={bgImg} height="80px"></FixedImgBanner>
+            <FixedImgBanner bgImg={bgImg} height="170px"></FixedImgBanner>
 
             <div id="appWrapper">                       
                 <Nav cart={cart}>

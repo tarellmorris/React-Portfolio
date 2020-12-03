@@ -28,7 +28,7 @@ import bgImg1 from '../../assets/backgrounds/hero-img.webp'
 import bgImg2 from '../../assets/backgrounds/web-dev-bg2.webp'
 import bgImg3 from '../../assets/backgrounds/web-dev-bg3.webp'
 
-const Homepage = () => {
+const Homepage = props => {
 
     useEffect( () => {
         const checkpoint = 200
@@ -59,10 +59,9 @@ const Homepage = () => {
             window.removeEventListener("scroll", handleScroll)
         }
 
-    }, [])
+        }, [])
 
     return (
-        <>
             <HomepageContainer id="Home">
                 <HeroImg  bgImg={bgImg1}>
                     <TextContainer>
@@ -74,7 +73,7 @@ const Homepage = () => {
                     </TextContainer>
                     <Banner id="banner"/>
                 </HeroImg>
-                <AboutContainer/>
+                <AboutContainer />
                 <FixedImgBanner bgImg={bgImg2} height="250px">
                     <SiAngular></SiAngular>
                     <SiReact></SiReact>
@@ -92,7 +91,6 @@ const Homepage = () => {
                     <SiBootstrap></SiBootstrap>
                 </FixedImgBanner>
             </HomepageContainer>
-        </>
     )
 }
 

@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import {Link as LinkR} from 'react-router-dom';
-
+import styled from 'styled-components'
+import {Link as LinkR} from 'react-router-dom'
+import {Color, Accent} from '../../styles/theme'
 
 export const FooterContainer = styled.div`
     display: flex;
@@ -11,6 +11,11 @@ export const FooterContainer = styled.div`
     width: 100%;
     padding: 50px;
     text-align: center;
+
+    & ::selection {
+        background: ${Accent};
+        color: ${Color};
+    }
 `
 export const FootNavWrapper = styled.ul`
     display: flex;

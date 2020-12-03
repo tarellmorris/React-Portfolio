@@ -1,6 +1,11 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
+import {Color, Accent} from '../../../../styles/theme'
 
 export const WeatherContainer = styled.div`
+    & ::selection {
+        background: ${Accent};
+        color: ${Color};
+    }
 
     & .weatherContainer {
         display: flex;

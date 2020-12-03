@@ -1,87 +1,100 @@
-import React, { Component } from 'react'
+import React, {useEffect, useState} from 'react'
 import {Link as LinkR} from 'react-router-dom'
+import {useClickAway} from 'react-use'
 
 import {
     Nav, 
     NavContainer, 
     BrandWrapper, 
     Brand, 
-    NavLinkWrapper, 
-    MobileMenu,
+    IconWrapper,
 } from './navbarElements'
-import {NavLinkCondition} from './navLinkCondition'
 
 import {FiMenu} from 'react-icons/fi'
+import {ImCross} from 'react-icons/im'
 import ScrollToTopArrow from '../Common/ScrollToTopArrow'
+import Dropdown from './Dropdown'
+import ThemeToggle from './ThemeToggle'
 
-class Navbar extends Component {
-    state = {
-        isScrolled: false,
-        isScrolledArrow: false
+const Navbar = props =>  {
+
+    const [isScrolled, setIsScrolled] = useState(false)
+    const [isScrolledArrow, setIsScrolledArrow] = useState(false)
+    const [isOpen, setIsOpen] = useState(false)
+
+    const ref = React.useRef()
+
+    const handleClick = () => {
+        setIsOpen(!isOpen)
     }
 
-    componentDidMount() {
-        window.addEventListener('scroll', () => {
+    const handleClickAway = () => {
+        setIsOpen(false)
+    }
+
+    useEffect( () => {
+        const handleScroll = () => {
             const isTop = window.scrollY < 10
             const isTopArrow = window.scrollY < 500
 
             if (!isTop) {
-                this.setState({ isScrolled: true })
+                setIsScrolled(true)
             } else {
-                this.setState({ isScrolled: false})
+                setIsScrolled(false)
             }
 
             if (!isTopArrow) {
-                this.setState({ isScrolledArrow: true})
+                setIsScrolledArrow(true)
             } else {
-                this.setState({ isScrolledArrow: false})
+                setIsScrolledArrow(false)
             }
-        })
-    };
+        }
 
-    componentWillUnmount() {
-        window.removeEventListener('scroll');
-    };
+        window.addEventListener('scroll', handleScroll)
 
-    render() {
-        const boxShadow = "0px 4px 8px 1px #000000a6"
-        const textShadowDarkFont = "1px 1px 1px #ffffff"
-        const darkFont = "#2e2e3b"
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        }
+    }, [])
 
-        return (
-            <Nav 
-            bgcolor={this.state.isScrolled ? "white" : "transparent"}
-            boxshadow={this.state.isScrolled ? boxShadow : "none"}
-            className={(this.props.isOpen) ? 'hide' : 'show'}
-            >
+    useClickAway(ref, () => {
+        handleClickAway()
+      })
+
+    return (
+        <>
+            <Nav ref={ref}>
                 <NavContainer>
                     <BrandWrapper>
-                        
-                            <Brand 
-                            fontcolor={this.state.isScrolled ? darkFont : "white"}
-                            textshadow={this.state.isScrolled ? textShadowDarkFont : 'none'}
-                            >
+                            <Brand>
                                 <LinkR to="/">
                                     Tarell Morris
                                 </LinkR>
                             </Brand>
                     </BrandWrapper>
-                    <NavLinkWrapper>
-                        <NavLinkCondition isScrolled={this.state.isScrolled}/>
-                    </NavLinkWrapper>
-                    <MobileMenu
-                    fontcolor={this.state.isScrolled ? darkFont : "white"}
-                    >
-                        <FiMenu 
-                        className="hamburger"
-                        onClick={this.props.onClick} 
+                    <IconWrapper>
+                        <ThemeToggle 
+                        darkMode={props.darkMode} 
+                        setDarkMode={props.setDarkMode}
                         />
-                    </MobileMenu>
+
+                        { 
+                            (!isOpen) 
+                            ? <FiMenu className="hamburger" onClick={handleClick} /> 
+                            : <ImCross className="cross" onClick={handleClick} />
+                        }
+
+                        <Dropdown 
+                        isOpen={isOpen} 
+                        onClick={handleClick} 
+                        isScrolled={isScrolled} 
+                        />
+                    </IconWrapper>
                 </NavContainer>
-                <ScrollToTopArrow isScrolledArrow={this.state.isScrolledArrow} />
             </Nav>
-        )
-    }
+            <ScrollToTopArrow isScrolledArrow={isScrolledArrow} />
+        </>
+    )
 }
 
 export default Navbar;

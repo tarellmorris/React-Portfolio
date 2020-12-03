@@ -3,9 +3,7 @@ import {NavLink, NavLinkR} from './navbarElements'
 import {useLocation} from 'react-router-dom'
 
 export const NavLinkCondition = (props) => {
-    const textShadowLightFont = "1px 1px 1px #2e2e3b"
-    const textShadowDarkFont = "1px 1px 1px #ffffff"
-    const darkFont = "#2e2e3b"
+
     const location = useLocation()
     const links = [
         {
@@ -39,11 +37,10 @@ export const NavLinkCondition = (props) => {
                     key={key}
                     to={links.page}
                     onClick={props.onClick}
+                    className={(props.isScrolled) ? 'scrolled' : ''}
                     smooth="easeInOutQuint"
                     duration={1000}
                     offset={-80}
-                    fontcolor={props.isScrolled ? darkFont : "white"}
-                    textshadow={props.isScrolled ? textShadowDarkFont : textShadowLightFont}
                     >
                             {links.page}
                     </NavLink>
@@ -58,8 +55,7 @@ export const NavLinkCondition = (props) => {
                     key={key}
                     to={links.to}
                     onClick={props.onClick}
-                    fontcolor={props.isScrolled ? darkFont : "white"}
-                    textshadow={props.isScrolled ? textShadowDarkFont : textShadowLightFont}
+                    className={(props.isScrolled) ? 'scrolled' : ''}
                     >
                         {links.page}
                     </NavLinkR>
@@ -74,8 +70,7 @@ export const NavLinkCondition = (props) => {
                     key={key}
                     to={links.to}
                     onClick={props.onClick}
-                    fontcolor={props.isScrolled ? darkFont : "white"}
-                    textshadow={props.isScrolled ? textShadowDarkFont : textShadowLightFont}
+                    className={(props.isScrolled) ? 'scrolled' : ''}
                     >
                         {links.page}
                     </NavLinkR>

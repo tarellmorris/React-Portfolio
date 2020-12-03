@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
+import {Accent} from '../../../styles/theme'
 
 export const ImgContainer = styled.div`
     display: flex;
@@ -12,7 +13,7 @@ export const ImgContainer = styled.div`
 
     & svg {
         font-size: 8rem;
-        color: #3ee1a5;
+        color: ${Accent};
         opacity: .7;
         margin: 0 25px;
     }

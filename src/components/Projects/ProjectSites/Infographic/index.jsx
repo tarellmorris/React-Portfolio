@@ -63,7 +63,7 @@ const Infographic = () => {
 
     return (
         <InfographicContainer>
-            <FixedImgBanner bgImg={bgImg} height="80px"></FixedImgBanner>
+            <FixedImgBanner bgImg={bgImg} height="170px"></FixedImgBanner>
             <InfoHeader>
                 <h3>What You Missed</h3>
                 <h1>Webinar Panel: Medical Devices</h1>

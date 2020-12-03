@@ -1,6 +1,12 @@
 import styled from 'styled-components'
+import {Color, Accent} from '../../../../styles/theme'
 
 export const ShoppingCartContainer = styled.div`
+    & ::selection {
+        background: ${Accent};
+        color: ${Color};
+    }
+    
     & #appWrapper {
         display: grid;
         grid-template-columns: 1fr;

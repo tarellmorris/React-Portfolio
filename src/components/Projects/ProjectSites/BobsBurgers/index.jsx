@@ -101,7 +101,7 @@ const BobsBurgers = props => {
   return (
     <Route path="/bobsburgers">
       <BobsContainer>
-        <FixedImgBanner bgImg={bgImg} height="80px"/>
+        <FixedImgBanner bgImg={bgImg} height="170px"/>
         <Header>
           <BobsLogo src={bbLogo}></BobsLogo>
         </Header>

@@ -1,8 +1,14 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
+import {Color, Accent} from '../../../../styles/theme'
 
 export const InfographicContainer = styled.div`
     padding: 0px;
     font-family: Rubik, sans-serif;
+
+    & ::selection {
+        background: ${Accent};
+        color: ${Color};
+    }
 
     & h1 {
         font-weight: 600;

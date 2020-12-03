@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import {Link as LinkScroll} from 'react-scroll'
 import {Link as LinkR} from 'react-router-dom'
-
+import {Background, Color, Accent} from '../../styles/theme'
 
 export const Nav = styled.nav`
     display: flex;
@@ -12,31 +12,17 @@ export const Nav = styled.nav`
     z-index: 10;
     height: 80px;
     width: 100%;
-    padding: 0px 25px;
-    z-index: 10;
-    background: ${props => props.bgcolor};
+    background: ${Background};
+    box-shadow: 0px 4px 8px 1px #000000a6;
     font-size: 1rem;
-    box-shadow: ${props => props.boxshadow};
     transition: .25s ease;
-
-    &.show {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    &.hide {
-        top: -80px;
-        opacity: 0;
-        visibility: hidden;
-    }
 `
 export const NavContainer = styled.div`
     display: flex;
-    justify-content: space-between;
-    height: 80px;
+    justify-content: space-around;
+    height: 100%;
     width: 100%;
-    max-width: 1100px;
-    z-index: 1;
+    padding: 0 25px;
 `
 export const BrandWrapper = styled.div`
     display: flex;
@@ -45,24 +31,16 @@ export const BrandWrapper = styled.div`
 export const Brand = styled.div`
     & a {
         font-size: 1.6rem;
-        color: ${props => props.fontcolor};
+        color: white;
         font-weight: 400;
-        text-shadow: ${props => props.textshadow};
         user-select: none;
+        color: ${Color};
 
         &:hover {
             cursor: pointer;
-            color: #3ee1a5;
-            text-shadow: ${props => props.textshadow};
+            color: ${Accent};
         }
     }
-
-`
-export const Subhead = styled.h2`
-    color: white;
-    font-size: 18px;
-    font-weight: 300;
-    margin-left: 1px;
 `
 export const NavLinkWrapper = styled.div`
     display: flex;
@@ -77,13 +55,13 @@ export const NavLink = styled(LinkScroll)`
         margin: 0 15px;
         font-size: 1.1rem;
         cursor: pointer;
-        color: ${props => props.fontcolor};
+        color: ${Color};
         font-weight: 400;
         border-bottom: 5px transparent solid;
         user-select: none;
 
         &:hover{
-            border-bottom: 5px ${props => props.fontcolor} solid;
+            border-bottom: 5px ${Color} solid;
         }
 `
 export const NavLinkR = styled(LinkR)`
@@ -91,32 +69,37 @@ export const NavLinkR = styled(LinkR)`
         margin: 0 15px;
         font-size: 1.1rem;
         cursor: pointer;
-        color: ${props => props.fontcolor};
+        color: ${Color};
         font-weight: 400;
         border-bottom: 5px transparent solid;
         user-select: none;
 
         &:hover{
-            border-bottom: 5px ${props => props.fontcolor} solid;
+            border-bottom: 5px ${Color} solid;
         }
 
         &:visited {
-            color: ${props => props.fontcolor};
+            color: ${Color};
             user-select: none;
+        
 `
-export const MobileMenu = styled.div`
-    display: none;
+export const IconWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 120px;
+    position: absolute;
+    color: ${Color};
     position: relative;
     user-select: none;
 
     & .hamburger {
         font-size: 40px;
+        cursor: pointer;
     }
 
-    @media screen and (max-width: 960px) {
-        display: flex;
-        align-items: center;
+    & .cross {
+        font-size: 26px;
         cursor: pointer;
-        color: ${props => props.fontcolor};
     }
 `

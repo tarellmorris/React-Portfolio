@@ -70,7 +70,7 @@ const RockPaperScissors = () => {
     if (userScore < 10 && compScore < 10) {
         return (
             <RPSContainer>
-                <FixedImgBanner bgImg={bgImg} height="80px"></FixedImgBanner>
+                <FixedImgBanner bgImg={bgImg} height="170px"></FixedImgBanner>
                 <Header>
                     <h1>Rock Paper Scissors</h1>
                 </Header>

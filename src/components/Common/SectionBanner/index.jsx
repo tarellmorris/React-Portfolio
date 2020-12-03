@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import {
     SectionContainer,
     TitleWrapper,
@@ -7,16 +7,14 @@ import {
 
 const SectionBanner = props => {
     return (
-        <>
-            <SectionContainer>
-                <TitleWrapper>
-                    <SectionTitle>
-                        {props.sectionTitle}
-                    </SectionTitle>
-                </TitleWrapper>
-                {props.children}
-            </SectionContainer>
-        </>
+        <SectionContainer>
+            <TitleWrapper>
+                <SectionTitle>
+                    {props.sectionTitle}
+                </SectionTitle>
+            </TitleWrapper>
+            {props.children}
+        </SectionContainer>
     )
 }
 

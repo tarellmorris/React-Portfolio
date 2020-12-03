@@ -1,13 +1,18 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
+import {Accent, Color, Background} from '../../styles/theme'
 
 export const ContactWrapper = styled.div`
-
+    & ::selection {
+        background: ${Accent};
+        color: ${Color};
+    }
 `
 export const ContactForm = styled.form`
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: ${Color};
 `
 export const FormWrap = styled.div`
     display: flex;
@@ -20,13 +25,15 @@ export const TextLabel = styled.label`
 `
 export const TextInput = styled.input`
     padding: 10px 15px;
-    border: #2e2e3b 3px solid;
+    border: #222222 3px solid;
     min-width: 350px;
     margin: 5px 25px;
+    background: ${Background};
+    color: ${Color};
     outline: none;
 
     &:focus {
-        border: #3ee1a5 3px solid;
+        border: ${Accent} 3px solid;
         box-shadow: 0px 3px 15px 0px #000000a6;
     }
 `
@@ -35,13 +42,15 @@ export const MessageLabel = styled.label`
 `
 export const TextArea = styled.textarea`
     padding: 10px 15px;
-    border: #2e2e3b 3px solid;
+    border: #222222 3px solid;
     min-width: 350px;
     margin: 5px 25px;
+    background: ${Background};
+    color: ${Color};
     outline: none;
 
     &:focus {
-        border: #3ee1a5 3px solid;
+        border: ${Accent} 3px solid;
         box-shadow: 0px 3px 15px 0px #000000a6;
     }
 `
@@ -57,7 +66,7 @@ export const SubmitButton = styled.button`
     box-shadow: 0px 4px 8px 1px #000000a6;
 
     &:hover {
-        color: #3ee1a5;
+        color: ${Accent};
         cursor: pointer;
     }
 `

@@ -34,7 +34,7 @@ export const InfiniteScrollUnsplash = () => {
 
     return (
         <InfiniteScrollContainer>
-            <FixedImgBanner bgImg={bgImg} height="80px"/>
+            <FixedImgBanner bgImg={bgImg} height="170px"/>
             <Header>
                 <h1>Infinite Scroll Demo</h1>
             </Header>

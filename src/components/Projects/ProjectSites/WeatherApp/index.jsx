@@ -45,7 +45,7 @@ export const WeatherApp = () => {
 
     return (
         <WeatherContainer>
-            <FixedImgBanner bgImg={bgImg} height="80px"/>
+            <FixedImgBanner bgImg={bgImg} height="170px"/>
             <AppWrapper className={(typeof weather.main != "undefined") ? ((weather.main.temp > 40) ? "warm" : "cold") : ''}>
 
                 <h1>Weather Search</h1>

@@ -1,7 +1,11 @@
 import styled from 'styled-components';
+import {Color, Accent} from '../../styles/theme'
 
 export const AboutWrapper = styled.div`
-
+    & ::selection {
+        background: ${Accent};
+        color: ${Color};
+    }
 `
 export const ImgDiv = styled.div`
     min-width: 350px;
@@ -36,6 +40,7 @@ export const TextWrapper = styled.div`
 `
 export const PBlock = styled.p`
     padding-bottom: 15px;
+    color: ${Color};
 `
 export const GridWrap = styled.div`
     display: grid;

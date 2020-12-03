@@ -1,9 +1,16 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
+import {Color, Accent} from '../../../../styles/theme'
+
 
 export const BobsContainer = styled.div`
     margin: 0px;
     background: #222222;
     font-family: 'Raleway', sans-serif;
+
+    & ::selection {
+        background: ${Accent};
+        color: ${Color};
+    }
 `
 export const Header = styled.div`
     display: flex;
